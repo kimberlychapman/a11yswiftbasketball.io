@@ -24,6 +24,50 @@ $(document).ready(function() {
   function hideTrue(){
     document.getElementById('hidden').style.color="transparent";
 }
+
+function showCode2(){
+    document.getElementById('white2').innerHTML="teamMateIsOpen";
+    document.getElementById('hidden2').style.color="#eee";
+}
+
+function hideCode2(){
+    document.getElementById('white2').innerHTML="(condition)";
+    document.getElementById('hidden2').style.color="transparent";
+}
+
+function showCode3(){
+    document.getElementById('else-if1').style.color="dodgerblue";
+    document.getElementById('dribble').style.color="#eee";
+    document.getElementById('hidden-bracket1').style.color="#eee";
+    document.getElementById('dribble2').style.color="#eee";
+    document.getElementById('hidden-bracket2').style.color="#eee";
+}
+
+function hideCode3(){
+    document.getElementById('else-if1').style.color="transparent";
+    document.getElementById('dribble').style.color="transparent";
+    document.getElementById('hidden-bracket1').style.color="transparent";
+    document.getElementById('dribble2').style.color="transparent";
+    document.getElementById('hidden-bracket2').style.color="transparent";
+}
+
+function showCode4(){
+    document.getElementById('else-if2').style.color="dodgerblue";
+    document.getElementById('shot1').style.color="#eee";
+    document.getElementById('hidden-bracket3').style.color="#eee";
+    document.getElementById('shot2').style.color="#eee";
+    document.getElementById('hidden-bracket4').style.color="#eee";
+}
+
+function hideCode4(){
+    document.getElementById('else-if2').style.color="transparent";
+    document.getElementById('shot1').style.color="transparent";
+    document.getElementById('hidden-bracket3').style.color="transparent";
+    document.getElementById('shot2').style.color="transparent";
+    document.getElementById('hidden-bracket4').style.color="transparent";
+}
+
+
   // function allowDrop(ev) {
   //     ev.preventDefault();
   // }
