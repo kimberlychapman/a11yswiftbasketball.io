@@ -67,6 +67,47 @@ function hideCode4(){
     document.getElementById('hidden-bracket4').style.color="transparent";
 }
 
+function explainAction1(){
+    document.getElementById('blue1').innerHTML="If the user forgets to enter \"While(true)\", the video shows the point guard dribbling the ball up the court, the point guard stalls, and the ball is stolen (turnover).  Then a commentator makes a comment such as, \"Wow, it is like [player name] forgot they were playing offense\".";
+    document.getElementById('blue1').style.backgroundColor="yellow";
+    document.getElementById('blue1').style.fontSize="12pt";
+    // document.getElementById('blue1').style.fontWeight="normal";
+    document.getElementById('blue1').style.color="#2a2a2a";
+    document.getElementById('bracket1').style.display="none";
+}
+
+function hideAction1(){
+    document.getElementById('blue1').innerHTML="While (true)";
+    document.getElementById('bracket1').style.display="block";
+    document.getElementById('blue1').style.backgroundColor="transparent";
+    document.getElementById('blue1').style.color="dodgerblue";
+    // document.getElementById('bracket1').style.color="#eee";
+}
+
+function showExecute(){
+    document.getElementById('execute').style.display="block";
+}
+
+function hideExecute(){
+    document.getElementById('execute').style.display="none";
+}
+// function hideTaskPanel(){
+//     document.getElementById('write-code').style.display="none";
+//     document.getElementById('codeblock1').style.display="none";
+//     document.getElementById('codeblock2').style.display="none";
+//     document.getElementById('codeblock3').style.display="none";
+//     document.getElementById('codeblock4').style.display="none";
+
+// }
+
+// function showTaskPanel(){
+//     document.getElementById('write-code').style.display="block";
+//     document.getElementById('codeblock1').style.display="block";
+//     document.getElementById('codeblock2').style.display="block";
+//     document.getElementById('codeblock3').style.display="block";
+//     document.getElementById('codeblock4').style.display="block";
+
+// }
 
   // function allowDrop(ev) {
   //     ev.preventDefault();

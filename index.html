@@ -50,25 +50,29 @@
   <audio id="right-explicit" src="audio/right-explicit.m4a" type="audio/m4a"></audio>
   <audio id="night-explicit" src="audio/night-explicit.m4a" type="audio/m4a"></audio>
 </section>
-
+<!-- <div class="detail1">Check 1 2</div> -->
 <div class="wrapper">
-  <div class="sidebar">
-      <div class="title">Run Code</div>
+    <div class="sidebar">
+      <div class="title" onclick="showExecute()" ondblclick="hideExecute()">Run Code</div>
 
     <ul class="nav">
       <li> 
 
-        <a id="test" onclick=countLoops() ondblclick=totalLoops()>var down=1</a>
-        <a id="test0">let down &lt 5= true</a>
-      
-        <a id="test3">While </span>(true) &nbsp<span id="emphasis2"> {</span></a>
-        <a id="test4">if receiverIsOpen &nbsp<span id="emphasis3"> {</span></a>
+        <!-- <a id="test" onclick=countLoops() ondblclick=totalLoops()>var down=1</a> -->
+
+        <a id="test0">
+            <span id ="blue1" onmouseover="explainAction1()" onmouseout="hideAction1()">While (true)</span>
+            <span id="bracket1"> &nbsp{</span>
+        </a>
+<!--       
+        <a id="test3">While (true)<span id="emphasis2"> {</span></a> -->
+        <!-- <a id="test4">if receiverIsOpen &nbsp<span id="emphasis3"> {</span></a>
         <a id="test10">throwPassToReceiver( ) &nbsp<span id="emphasis3"> }</span></a>
         <a id="test5"> else if ! receiverIsOpen && runningBackIsOpen<span id="emphasis3"> {</span></a>
         <a id="test6">handOffOrPassToBack( ) &nbsp<span id="emphasis3"> }</span></a>
         <a id="test7">else if ! receiverOpen &&<br> ! runningBackOpen<span id="emphasis3"> &nbsp {</span></a>
         <a id="test8">qbScramble( ) &nbsp <span id="emphasis3"> }</span></a>
-        <a id="test9">down +=1 &nbsp<span id="emphasis2"> }</span></a>
+        <a id="test9">down +=1 &nbsp<span id="emphasis2"> }</span></a> -->
          
       </li>
 
@@ -84,7 +88,7 @@
 </div>
 
 <div class="ih-item circle effect13 from_left_and_right"><a href="#">
-    <div class="img"><img src="img/pass.png" alt="img"></div>
+    <div class="img"><img src="img/pass_ball.png" alt="img"></div>
     <div class="info">
       <div class="info-back">
         <h3>#1 Pass</h3>
@@ -110,6 +114,7 @@
       </div>
     </div></a>
 </div>
+<div id="execute">Test Test Test</div>
 <div class="pg">Point Guard</div>
 <div class="task">
     <!-- POINT GUARD CODING CONCEPTS<br>&bull; Past Concepts: "if" and "else if" statements, using the NOT Operator -->
@@ -119,9 +124,9 @@
     2. The role they play While on Defense.<br><br>
     While on Offense, the role of the Point Guard is to control the ball and make sure that it gets to the right players at the right time— so that they can score.  Point Guards accomplish this in many different ways; the Point Guard in this scenario does the following:<br>
     <br>
-    &#x25cf; When a teammate is Open, they pass the ball.<br>
-    &#x25cf; When a teammate is Not Open, they dribble the ball to find an open pass.<br>
-    &#x25cf; When they are in the best position to score, they take the shot.<br><br>
+    &#x25cf; Their first choice is to find a teammate that <span class="underline">is Open</span>, and pass the ball.<br>
+    &#x25cf; When a teammate <span class="underline">is Not Open</span>, they dribble the ball to find an open pass.<br>
+    &#x25cf; Finally, if they are the one who is in the best <span class="underline">position to score</span>, they take the shot.<br><br>
     <!-- Since this is the role a Point Guard plays on Offense, we will have Offense = true.  That means that the Point Guard plays this role WHILE they are on Offense.  When Offense = false, that means they are on Defense so their role would be different. -->
 
     <!-- Since this is the role a Point Guard plays on Offense, we will have Offense = true.  This means that the Point Guard plays this role WHILE they are on Offense.  When Offense = false, this means they are on defense so this code wouldn't apply to them then.
@@ -134,6 +139,7 @@
 <div class="write-code">
     <span id="small">Since this is the role a Point Guard plays on Offense, we will have <span id="notice-me">Offense = true</span>.  That means that the Point Guard plays this role WHILE they are on Offense.  When Offense = false, that means they are on Defense so their role would be different.<br><br><span id="notice-me">For Your Point Guard Code:</span><br>&#x25cf; Modify the While statement to show that this code is followed While Offense is true.<br>&#x25cf; Complete the first "if" statement, and add additional "else if" statements, to have the Point Guard carry out actions under different conditions: &nbsp teamMateIsOpen,&nbsp  ! teamMateIsOpen, &nbsp openShot.</span>
 </div>
+<div class="see-codes">The user would enter their code in this panel— with the support of a bank of code blocks at the bottom and predictive text— but for Demo Purposes: click on the white lines to show each code block & double click the white lines to reset them.</div>
 <div id="codeblock1" onclick="showTrue()" ondblclick="hideTrue()">While<span id="white">(</span><span id="hidden">true</span><span id="white">)</span><span id="big-bracket">&nbsp {</span></div>
 <div id="codeblock2" onclick="showCode2()" ondblclick="hideCode2()">if &nbsp<span id="white2">(condition)</span><span id="medium-bracket">&nbsp {</span><br><span id="hidden2">passTheBall( )</span><br><span id="medium-bracket">&nbsp }</span></div>
 <div id="codeblock3" onclick="showCode3()" ondblclick="hideCode3()">
@@ -147,10 +153,10 @@
 </div>
 <div id="codeblock4" onclick="showCode4()" ondblclick="hideCode4()">
     <span id="else-if2">else if &nbsp</span>
-    <span id="shot1"> openShot</span>
+    <span id="shot1"> inPositionToScore</span>
     <span id="hidden-bracket3">&nbsp {</span>
     <br>
-    <span id="shot2">shootTheBall( )</span>
+    <span id="shot2">takeTheShot( )</span>
     <br>
     <span id="hidden-bracket4">&nbsp }</span><br>
     <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
