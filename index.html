@@ -88,7 +88,7 @@
           <br>
           <span id="bracket6">&nbsp }</span>
         </a>
-        <a id="test8" onmouseover="showGo()" onmouseout="hideGo()">
+        <a id="test8"  onmouseover="showSpans()" onmouseout="hideSpans()">
           <span id="blue4">else if</span>
           <!-- <br>
           <span id="else3">inPositiontoScore</span> -->
@@ -116,7 +116,7 @@
     </ul>
   </div>
   <div class="content content-is-open">
-    <span class='side-panel-toggle'>
+    <span class='side-panel-toggle' onclick="closeDetails()">
       <i class="fa fa-bars" style="color:white;"></i>
     </span>
 
@@ -152,9 +152,10 @@
     </div></a>
 </div>
 <div id="execute">Executing their Code</div>
-<div class="pg">Point Guard</div>
-<div class="task">
-POINT GUARD CODING CONCEPTS<br>&bull; Past Concepts: "if" and "else if" statements, using the NOT Operator
+<div id="pg" onmouseover="showTask()">Point Guard</div>
+<div id ="task" onclick="hideTask()">
+  <a id="close-box" href="">X</a><br>
+  POINT GUARD CODING CONCEPTS<br>&bull; Past Concepts: "if" and "else if" statements, using the NOT Operator
     <!-- <br>&bull; New Concept: While Loops<br> -->
     Each position has two different roles:<br><br> 
     1. The role they play While on Offense<br>
@@ -172,16 +173,17 @@ POINT GUARD CODING CONCEPTS<br>&bull; Past Concepts: "if" and "else if" statemen
     2. Complete the if and else if statements for what the Point Guard should do in different situations: teamMateIsOpen, ! teamMateIsOpen, openShot. -->
 
 </div>
-<div class="your-code">Your Task</div>
-<div class="write-code">
+<div class="your-code" onmouseover="showYourCode()">Your Task</div>
+<div id="write-code"onmouseover="showYourCode()"onclick="closeTaskPanel()">
+  <div id="close-box">X</div><br>
     <span id="small">Since this is the role a Point Guard plays on Offense, we will have <span id="notice-me">Offense = true</span>.  
     That means that the Point Guard plays this role <span id="notice-me">While </span> they are on <span id="notice-me">Offense</span>.<br><br>
     When <span id="notice-me">Offense = false</span>, that means they are on Defense so their role would be different.<br><br><span id="notice-me2">For Your Point Guard Code:</span><br>&#x25cf; Modify the While statement to show that this code is followed While Offense is true.<br>&#x25cf; Complete the first "if" statement, and add additional "else if" statements, to have the Point Guard carry out actions under different conditions: &nbsp teamMateIsOpen,&nbsp  ! teamMateIsOpen, &nbsp openShot.</span>
 </div>
-<div class="see-codes">The user would enter their code in this panel— with the support of a bank of code blocks at the bottom and predictive text— but for Demo Purposes: click on the white lines to show each code block & double click the white lines to reset them.</div>
-<div id="codeblock1" onclick="showTrue()" ondblclick="hideTrue()">While<span id="white">(</span><span id="hidden">true</span><span id="white">)</span><span id="big-bracket">&nbsp {</span></div>
-<div id="codeblock2" onclick="showCode2()" ondblclick="hideCode2()">if &nbsp<span id="white2">condition</span><span id="medium-bracket">&nbsp {</span><br><span id="hidden2">passTheBall( )</span><br><span id="medium-bracket">&nbsp }</span></div>
-<div id="codeblock3" onclick="showCode3()" ondblclick="hideCode3()">
+<div id="see-codes" onmouseover="showYourCode()">The user would enter their code in this panel— with the support of a bank of code blocks at the bottom and predictive text— but for Demo Purposes: click on the white lines to show each code block & double click the white lines to reset them.</div>
+<div id="codeblock1" onmouseover="showYourCode()" onclick="showTrue()" ondblclick="hideTrue()">While<span id="white">(</span><span id="hidden">true</span><span id="white">)</span><span id="big-bracket">&nbsp {</span></div>
+<div id="codeblock2" onmouseover="showYourCode()" onclick="showCode2()" ondblclick="hideCode2()">if &nbsp<span id="white2">condition</span><span id="medium-bracket">&nbsp {</span><br><span id="hidden2">passTheBall( )</span><br><span id="medium-bracket">&nbsp }</span></div>
+<div id="codeblock3"  onmouseover="showYourCode()"onclick="showCode3()" ondblclick="hideCode3()">
     <span id="else-if1">else if &nbsp</span>
     <span id="dribble"> ! teamMateIsOpen</span>
     <span id="hidden-bracket1">&nbsp {</span>
@@ -190,7 +192,7 @@ POINT GUARD CODING CONCEPTS<br>&bull; Past Concepts: "if" and "else if" statemen
     <br>
     <span id="hidden-bracket2">&nbsp }</span>
 </div>
-<div id="codeblock4" onclick="showCode4()" ondblclick="hideCode4()">
+<div id="codeblock4" onmouseover="showYourCode()" onclick="showCode4()" ondblclick="hideCode4()">
     <span id="else-if2">else if &nbsp</span>
     <span id="shot1"> inPositionToScore</span>
     <span id="hidden-bracket3">&nbsp {</span>
@@ -202,16 +204,50 @@ POINT GUARD CODING CONCEPTS<br>&bull; Past Concepts: "if" and "else if" statemen
 </div>
 
 
-<div id="please-work">
+<div id="please-work" onclick="closeWork()">
+  <a id="close-box" href="">X</a>
+  <br>
     If the user forgets to include "true" in their "While" statement, the video shows the point guard dribbling the ball up the court, then
-    the point guard stalls and the ball is stolen (turnover).  Next, a commentator makes a comment such as, 
-    "Wow, it is like [player name] forgot they were playing offense" as the video fades and the "screen" is clicked off, finally the code block flashes on and off a few times.  This is supposed 
-    to signal to the user that there is an error in that code block that is preventing the Point Guard from getting the Offense in motion.
+    the point guard stalls and the ball is stolen (turnover).  Next, a commentator makes a comment such as, "Wow, it is like [player name] 
+    forgot they were playing offense" as the video fades and the "screen" is clicked off, finally the code block flashes on and off a few times.  
+    This is supposed to signal to the user that there is an error in that code block that is preventing the Point Guard from getting the Offense 
+    in motion.
 </div>
-<div id="work-again">Can Lightning Strike Twice?</div>
-<div id="keep-working">Round Three</div>
-<div id="still-working">Not done yet</div>
-<div id="go-go-go">Yay!</div>
+
+<div id="work-again">
+  <a id="close-box" href="">X</a>
+  <br>
+  The user would have the option of running their code one code block at a time; a [potential] additional feature would be to 
+  include something that resembles the console, which would allow the user to track the commands as they execute: the command 
+  at play [in their code] would be highlighted.
+</div>
+
+<div id="keep-working" onclick="closeKeep()">
+    <a id="close-box" href="">X</a>
+  <br>
+  Concept: different videos appear on the screen depending on the error.  The theme of the videos is that they show the
+  unintended consequences of their error(s) without the game haulting completely—unless there is a syntax error; if that 
+  is the case, a whistle blows (i.e. a "foul" is called at the point of the error).  The following is an example of what 
+  might occur when their is a logic error: let's say that for the first if statement, instead of,<br> "if teamMateIsOpen 
+  {  passTheBall( ) &nbsp}", the user put <br>"if teamMateIsOpen { dribbleTheBall( ) &nbsp}".  The video might show the 
+  point guard dribbling the ball while an open teammate tries to signal (possibly by waving their arms) that they are open.  
+  The Offensive play would continue, but would ultimately be unsuccessful.
+</div>
+
+<div id="still-working" onclick="hideStill()">
+  <a id="close-box" href="">X</a>
+  <br>
+  Another potential feature that could be offered, would be to have some sort of code visualizer—something similar to
+  <a class="python" href="http://pythontutor.com/visualize.html#mode=edit">Python Tutor</a>.  
+  It would execute their code in an input output format so that the user could see exactly 
+  where the error in the occurred, along with an explanation of why it occurred.  If the 
+  user chose to use this feature while running their code, they would have to answer a 
+  question at the end that corresponds with the that block's concept (as means to reinforce
+  the concept(s) and assess a user's knowledge of the concept after receving support).<br><br>
+  <!-- CLICK ON THE X TO CLOSE THIS BOX. -->
+</div>
+
+
 <!-- <div id="" -->
 <!-- <div id="keep-working">Can Lightning Strike Twice?</div> -->
 

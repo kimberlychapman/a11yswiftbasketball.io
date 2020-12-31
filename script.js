@@ -67,6 +67,11 @@ function hideCode4(){
     document.getElementById('hidden-bracket4').style.color="transparent";
 }
 function showWork(){
+  document.getElementById('keep-working').style.display="none";
+  document.getElementById('still-working').style.display="none";
+  document.getElementById('work-again').style.display="none";
+  document.getElementById('task').style.display="none";
+
   document.getElementById('please-work').style.display="block";
   document.getElementById('blue1').style.backgroundColor="yellow";
   document.getElementById('bracket1').style.backgroundColor="yellow";
@@ -74,13 +79,23 @@ function showWork(){
 }
 
 function hideWork(){
-  document.getElementById('please-work').style.display="none";
+ 
   document.getElementById('blue1').style.backgroundColor="transparent";
   document.getElementById('bracket1').style.backgroundColor="transparent";
   document.getElementById('bracket1').style.color="#eee";
 }
 
+function closeWork(){
+ document.getElementById('please-work').style.display="none";
+}
+
 function showAgain(){
+  
+  document.getElementById('keep-working').style.display="none";
+  document.getElementById('please-work').style.display="none";
+  document.getElementById('still-working').style.display="none";
+  document.getElementById('task').style.display="none";
+  
   document.getElementById('work-again').style.display="block";
   document.getElementById('blue2').style.backgroundColor="yellow";
   document.getElementById('bracket2').style.backgroundColor="yellow";
@@ -94,7 +109,7 @@ function showAgain(){
 }
 
 function hideAgain(){
-  document.getElementById('work-again').style.display="none";
+  // document.getElementById('work-again').style.display="none";
   document.getElementById('blue2').style.backgroundColor="transparent";
   document.getElementById('bracket2').style.backgroundColor="transparent";
   document.getElementById('bracket2').style.color="#eee";
@@ -107,6 +122,11 @@ function hideAgain(){
 }
 
 function showKeep(){
+  document.getElementById('work-again').style.display="none";
+  document.getElementById('still-working').style.display="none";
+  document.getElementById('please-work').style.display="none";
+  document.getElementById('task').style.display="none";
+
   document.getElementById('keep-working').style.display="block";
   document.getElementById('blue3').style.backgroundColor="yellow";
   document.getElementById('else-if').style.backgroundColor="yellow";
@@ -122,7 +142,7 @@ function showKeep(){
 }
 
 function hideKeep(){
-  document.getElementById('keep-working').style.display="none";
+  document.getElementById('keep-working').style.display="block";
   document.getElementById('blue3').style.backgroundColor="transparent";
   document.getElementById('else-if').style.backgroundColor="transparent";
   document.getElementById('else2').style.backgroundColor="transparent";
@@ -133,17 +153,20 @@ function hideKeep(){
   document.getElementById('bracket6').style.backgroundColor="transparent";
   document.getElementById('bracket6').style.color="#eee";
 }
+function closeKeep(){
+  document.getElementById('keep-working').style.display="none";
+}
 
 function showStill(){
   document.getElementById('still-working').style.display="block";
 }
-
-function hideStill(){
-  document.getElementById('still-working').style.display="none";
-}
-
-function showGo(){
-  document.getElementById('go-go-go').style.display="block";
+function showSpans(){
+  document.getElementById('keep-working').style.display="none";
+  document.getElementById('please-work').style.display="none";
+  document.getElementById('work-again').style.display="none";
+  document.getElementById('task').style.display="none";
+  
+  document.getElementById('still-working').style.display="block";
   document.getElementById('blue4').style.backgroundColor="yellow";
   document.getElementById('else3').style.backgroundColor="yellow";
   document.getElementById('else3').style.color="black";
@@ -152,11 +175,13 @@ function showGo(){
   document.getElementById('bracket7').style.backgroundColor="yellow";
   document.getElementById('bracket7').style.color="black";
   document.getElementById('bracket8').style.backgroundColor="yellow";
-  document.getElementById('bracket8').style.color="black";
+  document.getElementById('bracket8').style.color="black";;
 }
 
-function hideGo(){
-  document.getElementById('go-go-go').style.display="none";
+function hideStill(){
+  document.getElementById('still-working').style.display="none";
+}
+function hideSpans(){
   document.getElementById('blue4').style.backgroundColor="transparent";
   document.getElementById('else3').style.backgroundColor="transparent";
   document.getElementById('else4').style.backgroundColor="transparent";
@@ -167,6 +192,55 @@ function hideGo(){
   document.getElementById('bracket8').style.backgroundColor="transparent";
   document.getElementById('bracket8').style.color="#eee";
 }
+
+function showTask(){
+  document.getElementById('task').style.display="block";
+  document.getElementById('still-working').style.display="none";
+  document.getElementById('keep-working').style.display="none";
+  document.getElementById('please-work').style.display="none";
+  document.getElementById('work-again').style.display="none";
+}
+
+function hideTask(){
+  document.getElementById('task').style.display="none";
+}
+
+function showYourCode(){
+
+  document.getElementById('task').style.display="none";
+  document.getElementById('keep-working').style.display="none";
+  document.getElementById('please-work').style.display="none";
+  document.getElementById('work-again').style.display="none";
+  document.getElementById('still-working').style.display="none";
+
+  document.getElementById('write-code').style.display="block";
+  document.getElementById('see-codes').style.display="block";
+  document.getElementById('codeblock1').style.display="block";
+  document.getElementById('codeblock2').style.display="block";
+  document.getElementById('codeblock3').style.display="block";
+  document.getElementById('codeblock4').style.display="block";
+}
+
+function closeTaskPanel(){
+  document.getElementById('write-code').style.display="none";
+  document.getElementById('see-codes').style.display="none";
+  document.getElementById('codeblock1').style.display="none";
+  document.getElementById('codeblock2').style.display="none";
+  document.getElementById('codeblock3').style.display="none";
+  document.getElementById('codeblock4').style.display="none";
+}
+
+function closeDetails(){
+  document.getElementById('keep-working').style.display="none";
+  document.getElementById('please-work').style.display="none";
+  document.getElementById('work-again').style.display="none";
+  document.getElementById('still-working').style.display="none";
+}
+
+// function hideYourCode(){
+
+//   // document.getElementById('see-code').style.display="none";
+// }
 
 
 // function explainAction1(){
@@ -719,7 +793,7 @@ function hideSetUp(){
       document.getElementById('thing25').style.color="transparent";
   }
 
-  function showElseHand(){
+  function lseHand(){
     document.getElementById('thing31').style.color="#eee";
 }
 
