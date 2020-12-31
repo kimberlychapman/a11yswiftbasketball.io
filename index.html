@@ -58,14 +58,35 @@
     <ul class="nav">
       <li> 
 
-        <!-- <a id="test" onclick=countLoops() ondblclick=totalLoops()>var down=1</a> -->
+      <!-- <a id="test" onclick=countLoops() ondblclick=totalLoops()>var down=1</a> -->
 
-        <a id="test0">
-            <span id ="blue1" onmouseover="explainAction1()" onmouseout="hideAction1()">While (true)</span>
+        <a id="test0" onmouseover="showWork()" onmouseout="hideWork()">
+            <span id ="blue1">While (true)</span>
             <span id="bracket1"> &nbsp{</span>
+        </a>   
+        <a id="test3" onmouseover="showAgain()" onmouseout="hideAgain()">
+            <span id="blue2" onmouseover="explainAction2()" onmouseout="hideAction2()">if</span>
+            <span id="if-statement">&nbsp teamMateIsOpen</span>
+            <br>
+            <span id="bracket2">&nbsp {</span>
+            <br>
+        </a> 
+        <a id="test4">
+            <span id="if-statement2">passTheBall( )</span>
+            <span id="bracket3">&nbsp }</span>
         </a>
-<!--       
-        <a id="test3">While (true)<span id="emphasis2"> {</span></a> -->
+        <a id="test6" onmouseover="showKeep()" onmouseout="hideKeep()">
+          <span id="blue3">else if</span>
+          <!-- <br><br> -->
+     
+          <span id="bracket4">&nbsp {</span>
+        </a>
+        <a id="test5">
+          <span id="else-if">&nbsp ! teamMateIsOpen</span>
+          <span id="bracket4">&nbsp {</span>
+        </a>
+        <!-- <a id="test6"></a> -->
+
         <!-- <a id="test4">if receiverIsOpen &nbsp<span id="emphasis3"> {</span></a>
         <a id="test10">throwPassToReceiver( ) &nbsp<span id="emphasis3"> }</span></a>
         <a id="test5"> else if ! receiverIsOpen && runningBackIsOpen<span id="emphasis3"> {</span></a>
@@ -114,10 +135,10 @@
       </div>
     </div></a>
 </div>
-<div id="execute">Test Test Test</div>
+<div id="execute">Executing their Code</div>
 <div class="pg">Point Guard</div>
 <div class="task">
-    <!-- POINT GUARD CODING CONCEPTS<br>&bull; Past Concepts: "if" and "else if" statements, using the NOT Operator -->
+POINT GUARD CODING CONCEPTS<br>&bull; Past Concepts: "if" and "else if" statements, using the NOT Operator
     <!-- <br>&bull; New Concept: While Loops<br> -->
     Each position has two different roles:<br><br> 
     1. The role they play While on Offense<br>
@@ -137,11 +158,13 @@
 </div>
 <div class="your-code">Your Task</div>
 <div class="write-code">
-    <span id="small">Since this is the role a Point Guard plays on Offense, we will have <span id="notice-me">Offense = true</span>.  That means that the Point Guard plays this role WHILE they are on Offense.  When Offense = false, that means they are on Defense so their role would be different.<br><br><span id="notice-me">For Your Point Guard Code:</span><br>&#x25cf; Modify the While statement to show that this code is followed While Offense is true.<br>&#x25cf; Complete the first "if" statement, and add additional "else if" statements, to have the Point Guard carry out actions under different conditions: &nbsp teamMateIsOpen,&nbsp  ! teamMateIsOpen, &nbsp openShot.</span>
+    <span id="small">Since this is the role a Point Guard plays on Offense, we will have <span id="notice-me">Offense = true</span>.  
+    That means that the Point Guard plays this role <span id="notice-me">While </span> they are on <span id="notice-me">Offense</span>.<br><br>
+    When <span id="notice-me">Offense = false</span>, that means they are on Defense so their role would be different.<br><br><span id="notice-me2">For Your Point Guard Code:</span><br>&#x25cf; Modify the While statement to show that this code is followed While Offense is true.<br>&#x25cf; Complete the first "if" statement, and add additional "else if" statements, to have the Point Guard carry out actions under different conditions: &nbsp teamMateIsOpen,&nbsp  ! teamMateIsOpen, &nbsp openShot.</span>
 </div>
 <div class="see-codes">The user would enter their code in this panel— with the support of a bank of code blocks at the bottom and predictive text— but for Demo Purposes: click on the white lines to show each code block & double click the white lines to reset them.</div>
 <div id="codeblock1" onclick="showTrue()" ondblclick="hideTrue()">While<span id="white">(</span><span id="hidden">true</span><span id="white">)</span><span id="big-bracket">&nbsp {</span></div>
-<div id="codeblock2" onclick="showCode2()" ondblclick="hideCode2()">if &nbsp<span id="white2">(condition)</span><span id="medium-bracket">&nbsp {</span><br><span id="hidden2">passTheBall( )</span><br><span id="medium-bracket">&nbsp }</span></div>
+<div id="codeblock2" onclick="showCode2()" ondblclick="hideCode2()">if &nbsp<span id="white2">condition</span><span id="medium-bracket">&nbsp {</span><br><span id="hidden2">passTheBall( )</span><br><span id="medium-bracket">&nbsp }</span></div>
 <div id="codeblock3" onclick="showCode3()" ondblclick="hideCode3()">
     <span id="else-if1">else if &nbsp</span>
     <span id="dribble"> ! teamMateIsOpen</span>
@@ -163,8 +186,15 @@
 </div>
 
 
-
-
+<div id="please-work">
+    If the user forgets to include "true" in their "While" statement, the video shows the point guard dribbling the ball up the court, then
+    the point guard stalls and the ball is stolen (turnover).  Next, a commentator makes a comment such as, 
+    "Wow, it is like [player name] forgot they were playing offense" as the video fades and the "screen" is clicked off, finally the code block flashes on and off a few times.  This is supposed 
+    to signal to the user that there is an error in that code block that is preventing the Point Guard from getting the Offense in motion.
+</div>
+<div id="work-again">Can Lightning Strike Twice?</div>
+<div id="keep-working">Round Three</div>
+<!-- <div id="keep-working">Can Lightning Strike Twice?</div> -->
 
 <!-- <div id="title2" onclick="showSetUp()" ondblclick="hideSetUp()"><span id="emphasis2">{</span></div> -->
 <!-- <div id="set-up">var down=1<br><br>let down &lt 5= true<br><br>While(true)</div>
