@@ -68,28 +68,105 @@ function hideCode4(){
 }
 function showWork(){
   document.getElementById('please-work').style.display="block";
+  document.getElementById('blue1').style.backgroundColor="yellow";
+  document.getElementById('bracket1').style.backgroundColor="yellow";
+  document.getElementById('bracket1').style.color="black";
 }
 
 function hideWork(){
   document.getElementById('please-work').style.display="none";
+  document.getElementById('blue1').style.backgroundColor="transparent";
+  document.getElementById('bracket1').style.backgroundColor="transparent";
+  document.getElementById('bracket1').style.color="#eee";
 }
 
 function showAgain(){
   document.getElementById('work-again').style.display="block";
+  document.getElementById('blue2').style.backgroundColor="yellow";
+  document.getElementById('bracket2').style.backgroundColor="yellow";
+  document.getElementById('bracket2').style.color="black";
+  document.getElementById('bracket3').style.backgroundColor="yellow";
+  document.getElementById('bracket3').style.color="black";
+  document.getElementById('if-statement').style.backgroundColor="yellow";
+  document.getElementById('if-statement').style.color="black";
+  document.getElementById('if-statement2').style.backgroundColor="yellow";
+  document.getElementById('if-statement2').style.color="black";
 }
 
 function hideAgain(){
   document.getElementById('work-again').style.display="none";
+  document.getElementById('blue2').style.backgroundColor="transparent";
+  document.getElementById('bracket2').style.backgroundColor="transparent";
+  document.getElementById('bracket2').style.color="#eee";
+  document.getElementById('bracket3').style.backgroundColor="transparent";
+  document.getElementById('bracket3').style.color="#eee";
+  document.getElementById('if-statement').style.backgroundColor="transparent";
+  document.getElementById('if-statement').style.color="#eee";
+  document.getElementById('if-statement2').style.backgroundColor="transparent";
+  document.getElementById('if-statement2').style.color="#eee";
 }
 
 function showKeep(){
   document.getElementById('keep-working').style.display="block";
+  document.getElementById('blue3').style.backgroundColor="yellow";
+  document.getElementById('else-if').style.backgroundColor="yellow";
+  document.getElementById('else2').style.backgroundColor="yellow";
+  document.getElementById('else-if').style.color="black";
+  document.getElementById('else2').style.color="black";
+  // document.getElementById('bracket4').style.backgroundColor="yellow";
+  // document.getElementById('bracket4').style.color="black";
+  document.getElementById('bracket5').style.backgroundColor="yellow";
+  document.getElementById('bracket5').style.color="black";
+  document.getElementById('bracket6').style.backgroundColor="yellow";
+  document.getElementById('bracket6').style.color="black";
 }
 
 function hideKeep(){
   document.getElementById('keep-working').style.display="none";
+  document.getElementById('blue3').style.backgroundColor="transparent";
+  document.getElementById('else-if').style.backgroundColor="transparent";
+  document.getElementById('else2').style.backgroundColor="transparent";
+  document.getElementById('else-if').style.color="#eee";
+  document.getElementById('else2').style.color="#eee";
+  document.getElementById('bracket5').style.backgroundColor="transparent";
+  document.getElementById('bracket5').style.color="#eee";
+  document.getElementById('bracket6').style.backgroundColor="transparent";
+  document.getElementById('bracket6').style.color="#eee";
 }
 
+function showStill(){
+  document.getElementById('still-working').style.display="block";
+}
+
+function hideStill(){
+  document.getElementById('still-working').style.display="none";
+}
+
+function showGo(){
+  document.getElementById('go-go-go').style.display="block";
+  document.getElementById('blue4').style.backgroundColor="yellow";
+  document.getElementById('else3').style.backgroundColor="yellow";
+  document.getElementById('else3').style.color="black";
+  document.getElementById('else4').style.backgroundColor="yellow";
+  document.getElementById('else4').style.color="black";
+  document.getElementById('bracket7').style.backgroundColor="yellow";
+  document.getElementById('bracket7').style.color="black";
+  document.getElementById('bracket8').style.backgroundColor="yellow";
+  document.getElementById('bracket8').style.color="black";
+}
+
+function hideGo(){
+  document.getElementById('go-go-go').style.display="none";
+  document.getElementById('blue4').style.backgroundColor="transparent";
+  document.getElementById('else3').style.backgroundColor="transparent";
+  document.getElementById('else4').style.backgroundColor="transparent";
+  document.getElementById('else3').style.color="#eee";
+  document.getElementById('else4').style.color="#eee";
+  document.getElementById('bracket7').style.backgroundColor="transparent";
+  document.getElementById('bracket7').style.color="#eee";
+  document.getElementById('bracket8').style.backgroundColor="transparent";
+  document.getElementById('bracket8').style.color="#eee";
+}
 
 
 // function explainAction1(){

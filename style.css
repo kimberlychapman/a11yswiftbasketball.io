@@ -110,26 +110,27 @@ body {
   display: flex;
   flex-direction:row;
 } */
-.nav li a,
+.nav li a
 .nav li #test,
 .nav li #test0,
 .nav li #test1,
 .nav li #test2, 
-/* .nav li #test3, */
+.nav li #test3,
 .nav li #test4,
 .nav li #test5,
 .nav li #test6,
 .nav li #test7, 
 .nav li #test8,
 .nav li #test9,
-.nav li #test10   {
+.nav li #test10,
+.nav li #test11    {
   position: relative;
   display: flex;
   flex-direction:row;
   padding: 15px 15px 15px 20px;
   font-size: 13pt;
   color: dodgerblue;
-  border-bottom: 1px solid #222;
+  /* border-bottom: 1px solid #222; */
   font-family:'Montserrat', sans-serif;
 }
 
@@ -145,7 +146,8 @@ body {
 .nav li #test7:before,
 .nav li #test8:before,
 .nav li #test9:before,
-.nav li #test:before      {
+.nav li #test:before,
+.nav li #test11:before      {
   font: 14px fontawesome;
   position: absolute;
   top: 14px;
@@ -158,7 +160,8 @@ body {
 }
 #blue1,
 #blue2,
-#blue3{
+#blue3,
+#blue4{
     color:dodgerblue;
 }
 #bracket1{
@@ -169,7 +172,11 @@ body {
 
 #bracket2,
 #bracket3,
-#bracket4{
+#bracket4,
+#bracket5,
+#bracket6,
+#bracket7,
+#bracket8{
     font-size:15pt;
     font-weight:400;
     color:#eee;
@@ -177,7 +184,10 @@ body {
 
 #if-statement,
 #if-statement2,
-#else-if{
+#else-if, 
+#else2, 
+#else3,
+#else4 {
     color:#eee;
     font-weight:normal;
     /* font-size:12pt; */
@@ -192,10 +202,21 @@ body {
     padding: 15px 15px 15px 20px;
     font-size: 13pt;
     color: dodgerblue;
-    border-bottom: transparent;
+    border-top: solid 1px #222;
 }
-
-.nav li #test6{
+.nav li #test4,
+.nav li #test7,
+.nav li #test11{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  padding: 15px 15px 15px 20px;
+  font-size: 13pt;
+  color: dodgerblue;
+  border-bottom: solid 1px #222;
+}
+.nav li #test6, 
+.nav li #test9{
   position: relative;
   display: flex;
   flex-direction:row;
@@ -214,6 +235,40 @@ nav li #test10{
   color: dodgerblue;
   border-top: transparent;
 }
+
+nav li #test5{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  padding: 15px 15px 15px 20px;
+  font-size: 13pt;
+  color: dodgerblue;
+
+  /* border-top: transparent;
+  border-bottom:#222; */
+}
+/* nav li #test7{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  padding: 15px 15px 15px 20px;
+  font-size: 13pt;
+  color: dodgerblue;
+  border-top: transparent;
+  border-bottom:solid 1px #222;
+} */
+
+nav li #test8{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  padding: 15px 15px 15px 20px;
+  font-size: 13pt;
+  color: dodgerblue;
+  /* border-top: transparent; */
+  border-top:solid 1px #222;
+}
+
 
 #please-work{
     display:none;
@@ -261,6 +316,48 @@ nav li #test10{
   display:none;
   position:absolute;
   top:290px;
+  left:295px;
+  width:500px;
+  height:220px;
+  background-color: #2a2a2a;
+  /* border-right:2px solid #eee;
+  border-left:2px solid #eee;
+  border-bottom:2px solid #eee; */
+  font-family:'Montserrat', sans-serif;
+  border:ridge 5px dodgerblue;
+  font-size:10pt;
+  color:  #eee;
+  font-weight: normal;
+  padding:10px;
+  padding-left:25px;
+  /* text-align: center; */
+}
+
+#still-working{
+  display:none;
+  position:absolute;
+  top:290px;
+  left:295px;
+  width:500px;
+  height:220px;
+  background-color: #2a2a2a;
+  /* border-right:2px solid #eee;
+  border-left:2px solid #eee;
+  border-bottom:2px solid #eee; */
+  font-family:'Montserrat', sans-serif;
+  border:ridge 5px dodgerblue;
+  font-size:10pt;
+  color:  #eee;
+  font-weight: normal;
+  padding:10px;
+  padding-left:25px;
+  /* text-align: center; */
+}
+
+#go-go-go{
+  display:none;
+  position:absolute;
+  top:470px;
   left:295px;
   width:500px;
   height:220px;
