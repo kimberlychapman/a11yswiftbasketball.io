@@ -37,29 +37,23 @@ $(document).ready(function() {
 }
 
 function showCode2(){
-    document.getElementById('white2').innerHTML="teamMateIsOpen";
+    document.getElementById('white2').innerHTML="yourSkills == theirSkills || strongShooter";
     document.getElementById('hidden2').style.color="#eee";
 }
 
 function hideCode2(){
-    document.getElementById('white2').innerHTML="(condition)";
+    document.getElementById('white2').innerHTML="(condition1) || (condition2)";
     document.getElementById('hidden2').style.color="transparent";
 }
 
 function showCode3(){
-    document.getElementById('else-if1').style.color="dodgerblue";
-    document.getElementById('dribble').style.color="#eee";
-    document.getElementById('hidden-bracket1').style.color="#eee";
-    document.getElementById('dribble2').style.color="#eee";
-    document.getElementById('hidden-bracket2').style.color="#eee";
+  document.getElementById('white3').innerHTML="! strongShooter  || ! strongDefender";
+  document.getElementById('hidden3').style.color="#eee";
 }
 
 function hideCode3(){
-    document.getElementById('else-if1').style.color="transparent";
-    document.getElementById('dribble').style.color="transparent";
-    document.getElementById('hidden-bracket1').style.color="transparent";
-    document.getElementById('dribble2').style.color="transparent";
-    document.getElementById('hidden-bracket2').style.color="transparent";
+  document.getElementById('white3').innerHTML="(condition1) || (condition2)";
+  document.getElementById('hidden3').style.color="transparent";
 }
 
 function showCode4(){
@@ -79,9 +73,11 @@ function hideCode4(){
 }
 function showWork(){
   document.getElementById('keep-working').style.display="none";
-  document.getElementById('still-working').style.display="none";
+//   document.getElementById('still-working').style.display="none";
   document.getElementById('work-again').style.display="none";
   document.getElementById('task').style.display="none";
+  document.getElementById('task2').style.display="none";
+  document.getElementById('task3').style.display="none";
 
   document.getElementById('please-work').style.display="block";
   document.getElementById('blue1').style.backgroundColor="yellow";
@@ -96,6 +92,10 @@ function hideWork(){
   document.getElementById('bracket1').style.color="#eee";
 }
 
+
+
+
+
 function closeWork(){
  document.getElementById('please-work').style.display="none";
 }
@@ -104,100 +104,115 @@ function showAgain(){
   
   document.getElementById('keep-working').style.display="none";
   document.getElementById('please-work').style.display="none";
-  document.getElementById('still-working').style.display="none";
+//   document.getElementById('still-working').style.display="none";
   document.getElementById('task').style.display="none";
+  document.getElementById('task2').style.display="none";
+  document.getElementById('task3').style.display="none";
   
   document.getElementById('work-again').style.display="block";
   document.getElementById('blue2').style.backgroundColor="yellow";
-  document.getElementById('bracket2').style.backgroundColor="yellow";
-  document.getElementById('bracket2').style.color="black";
   document.getElementById('bracket3').style.backgroundColor="yellow";
   document.getElementById('bracket3').style.color="black";
+  document.getElementById('bracket4').style.backgroundColor="yellow";
+  document.getElementById('bracket4').style.color="black";
   document.getElementById('if-statement').style.backgroundColor="yellow";
   document.getElementById('if-statement').style.color="black";
   document.getElementById('if-statement2').style.backgroundColor="yellow";
   document.getElementById('if-statement2').style.color="black";
+  document.getElementById('or1').style.backgroundColor="yellow";
+  document.getElementById('or1').style.color="black";
 }
 
 function hideAgain(){
-  // document.getElementById('work-again').style.display="none";
+
   document.getElementById('blue2').style.backgroundColor="transparent";
-  document.getElementById('bracket2').style.backgroundColor="transparent";
-  document.getElementById('bracket2').style.color="#eee";
   document.getElementById('bracket3').style.backgroundColor="transparent";
   document.getElementById('bracket3').style.color="#eee";
+  document.getElementById('bracket4').style.backgroundColor="transparent";
+  document.getElementById('bracket4').style.color="#eee";
   document.getElementById('if-statement').style.backgroundColor="transparent";
   document.getElementById('if-statement').style.color="#eee";
   document.getElementById('if-statement2').style.backgroundColor="transparent";
   document.getElementById('if-statement2').style.color="#eee";
+  document.getElementById('or1').style.backgroundColor="transparent";
+  document.getElementById('or1').style.color="#eee";
 }
 
-function showKeep(){
-  document.getElementById('work-again').style.display="none";
-  document.getElementById('still-working').style.display="none";
+// function showKeep(){
+//   document.getElementById('work-again').style.display="none";
+//   document.getElementById('still-working').style.display="none";
+//   document.getElementById('please-work').style.display="none";
+//   document.getElementById('task').style.display="none";
+
+//   document.getElementById('keep-working').style.display="block";
+//   document.getElementById('blue3').style.backgroundColor="yellow";
+//   document.getElementById('else-if').style.backgroundColor="yellow";
+//   document.getElementById('else2').style.backgroundColor="yellow";
+//   document.getElementById('else-if').style.color="black";
+//   document.getElementById('else2').style.color="black";
+//   document.getElementById('bracket5').style.backgroundColor="yellow";
+//   document.getElementById('bracket5').style.color="black";
+//   document.getElementById('bracket6').style.backgroundColor="yellow";
+//   document.getElementById('bracket6').style.color="black";
+// }
+
+// function hideKeep(){
+//   document.getElementById('keep-working').style.display="block";
+//   document.getElementById('blue3').style.backgroundColor="transparent";
+//   document.getElementById('else-if').style.backgroundColor="transparent";
+//   document.getElementById('else2').style.backgroundColor="transparent";
+//   document.getElementById('else-if').style.color="#eee";
+//   document.getElementById('else2').style.color="#eee";
+//   document.getElementById('bracket5').style.backgroundColor="transparent";
+//   document.getElementById('bracket5').style.color="#eee";
+//   document.getElementById('bracket6').style.backgroundColor="transparent";
+//   document.getElementById('bracket6').style.color="#eee";
+// }
+// function closeKeep(){
+//   document.getElementById('keep-working').style.display="none";
+// }
+
+// function showStill(){
+//   document.getElementById('still-working').style.display="block";
+// }
+function showSpans(){
+
   document.getElementById('please-work').style.display="none";
+  document.getElementById('work-again').style.display="none";
   document.getElementById('task').style.display="none";
+  document.getElementById('task2').style.display="none";
+  document.getElementById('task3').style.display="none";
+//   document.getElementById('still-working').style.display="block";
 
   document.getElementById('keep-working').style.display="block";
   document.getElementById('blue3').style.backgroundColor="yellow";
-  document.getElementById('else-if').style.backgroundColor="yellow";
-  document.getElementById('else2').style.backgroundColor="yellow";
-  document.getElementById('else-if').style.color="black";
-  document.getElementById('else2').style.color="black";
-  // document.getElementById('bracket4').style.backgroundColor="yellow";
-  // document.getElementById('bracket4').style.color="black";
-  document.getElementById('bracket5').style.backgroundColor="yellow";
-  document.getElementById('bracket5').style.color="black";
-  document.getElementById('bracket6').style.backgroundColor="yellow";
-  document.getElementById('bracket6').style.color="black";
-}
-
-function hideKeep(){
-  document.getElementById('keep-working').style.display="block";
-  document.getElementById('blue3').style.backgroundColor="transparent";
-  document.getElementById('else-if').style.backgroundColor="transparent";
-  document.getElementById('else2').style.backgroundColor="transparent";
-  document.getElementById('else-if').style.color="#eee";
-  document.getElementById('else2').style.color="#eee";
-  document.getElementById('bracket5').style.backgroundColor="transparent";
-  document.getElementById('bracket5').style.color="#eee";
-  document.getElementById('bracket6').style.backgroundColor="transparent";
-  document.getElementById('bracket6').style.color="#eee";
-}
-function closeKeep(){
-  document.getElementById('keep-working').style.display="none";
-}
-
-function showStill(){
-  document.getElementById('still-working').style.display="block";
-}
-function showSpans(){
-  document.getElementById('keep-working').style.display="none";
-  document.getElementById('please-work').style.display="none";
-  document.getElementById('work-again').style.display="none";
-  document.getElementById('task').style.display="none";
-  
-  document.getElementById('still-working').style.display="block";
-  document.getElementById('blue4').style.backgroundColor="yellow";
+  document.getElementById('or2').style.backgroundColor="yellow";
+  document.getElementById('or2').style.color="black";
+  document.getElementById('or3').style.backgroundColor="yellow";
+  document.getElementById('or3').style.color="black";
   document.getElementById('else3').style.backgroundColor="yellow";
   document.getElementById('else3').style.color="black";
-  document.getElementById('else4').style.backgroundColor="yellow";
-  document.getElementById('else4').style.color="black";
+  document.getElementById('bracket6').style.backgroundColor="yellow";
+  document.getElementById('bracket6').style.color="black";
   document.getElementById('bracket7').style.backgroundColor="yellow";
   document.getElementById('bracket7').style.color="black";
   document.getElementById('bracket8').style.backgroundColor="yellow";
   document.getElementById('bracket8').style.color="black";;
 }
 
-function hideStill(){
-  document.getElementById('still-working').style.display="none";
-}
+// function hideStill(){
+//   document.getElementById('still-working').style.display="none";
+// }
 function hideSpans(){
-  document.getElementById('blue4').style.backgroundColor="transparent";
+  document.getElementById('blue3').style.backgroundColor="transparent";
+  document.getElementById('or2').style.backgroundColor="transparent";
+  document.getElementById('or2').style.color="#eee";
+  document.getElementById('or3').style.backgroundColor="transparent";
+  document.getElementById('or3').style.color="#eee";
   document.getElementById('else3').style.backgroundColor="transparent";
-  document.getElementById('else4').style.backgroundColor="transparent";
   document.getElementById('else3').style.color="#eee";
-  document.getElementById('else4').style.color="#eee";
+  document.getElementById('bracket6').style.backgroundColor="transparent";
+  document.getElementById('bracket6').style.color="#eee";
   document.getElementById('bracket7').style.backgroundColor="transparent";
   document.getElementById('bracket7').style.color="#eee";
   document.getElementById('bracket8').style.backgroundColor="transparent";
@@ -206,7 +221,9 @@ function hideSpans(){
 
 function showTask(){
   document.getElementById('task').style.display="block";
-  document.getElementById('still-working').style.display="none";
+  document.getElementById('task2').style.display="block";
+  document.getElementById('task3').style.display="block";
+//   document.getElementById('still-working').style.display="none";
   document.getElementById('keep-working').style.display="none";
   document.getElementById('please-work').style.display="none";
   document.getElementById('work-again').style.display="none";
@@ -214,15 +231,19 @@ function showTask(){
 
 function hideTask(){
   document.getElementById('task').style.display="none";
+  document.getElementById('task2').style.display="none";
+  document.getElementById('task3').style.display="none";
 }
 
 function showYourCode(){
 
   document.getElementById('task').style.display="none";
+  document.getElementById('task2').style.display="none";
+  document.getElementById('task3').style.display="none";
   document.getElementById('keep-working').style.display="none";
   document.getElementById('please-work').style.display="none";
   document.getElementById('work-again').style.display="none";
-  document.getElementById('still-working').style.display="none";
+//   document.getElementById('still-working').style.display="none";
 
   document.getElementById('write-code').style.display="block";
   document.getElementById('see-codes').style.display="block";
@@ -245,8 +266,21 @@ function closeDetails(){
   document.getElementById('keep-working').style.display="none";
   document.getElementById('please-work').style.display="none";
   document.getElementById('work-again').style.display="none";
-  document.getElementById('still-working').style.display="none";
+//   document.getElementById('still-working').style.display="none";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function hideYourCode(){
 

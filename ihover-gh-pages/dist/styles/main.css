@@ -4552,9 +4552,9 @@ body {
   top:48%;
   left:55%;
   margin-top:-10px;
-  left:630px;
-  height:300px;
-  width:450px;
+  left:380px;
+  height:265px;
+  width:415px;
   border:inset 5px #404040;
 }
 ih-item.square.effect7 {
@@ -4591,8 +4591,8 @@ transition: all 0.35s ease-in-out;
 transform: scale(1);
 }
 .ih-item.square.effect7 .info {
-  background: #333333;
-  background: rgba(0, 0, 0, 0.6);
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.35s ease-in-out;
@@ -4605,7 +4605,7 @@ transform: scale(1);
   text-align: center;
   font-size: 24pt;
   padding: 10px;
-  background: #111111;
+  background: rgba(12, 34, 52, 0.6);
   margin-top: 100px;
   -webkit-transform: scale(4);
   -moz-transform: scale(4);
@@ -4658,4 +4658,16 @@ transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+}
+
+
+.ih-item.square.effect7{
+  position: absolute;
+  top:48%;
+  left:20%;
+  margin-top:-10px;
+  left:900px;
+  height:265px;
+  width:415px;
+  border:inset 5px #404040;
 }

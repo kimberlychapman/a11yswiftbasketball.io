@@ -26,7 +26,7 @@ $(document).ready(function() {
 }
 
 function showCode2(){
-    document.getElementById('white2').innerHTML="teamMateIsOpen";
+    document.getElementById('white2').innerHTML="isOpen";
     document.getElementById('hidden2').style.color="#eee";
 }
 
@@ -175,7 +175,9 @@ function showSpans(){
   document.getElementById('bracket7').style.backgroundColor="yellow";
   document.getElementById('bracket7').style.color="black";
   document.getElementById('bracket8').style.backgroundColor="yellow";
-  document.getElementById('bracket8').style.color="black";;
+  document.getElementById('bracket8').style.color="black";
+  document.getElementById('bracket9').style.backgroundColor="yellow";
+  document.getElementById('bracket9').style.color="black";
 }
 
 function hideStill(){
@@ -191,6 +193,8 @@ function hideSpans(){
   document.getElementById('bracket7').style.color="#eee";
   document.getElementById('bracket8').style.backgroundColor="transparent";
   document.getElementById('bracket8').style.color="#eee";
+  document.getElementById('bracket9').style.backgroundColor="transparent";
+  document.getElementById('bracket9').style.color="#eee";
 }
 
 function showTask(){

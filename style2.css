@@ -164,7 +164,8 @@ body {
 #blue4{
     color:dodgerblue;
 }
-#bracket1{
+#bracket1,
+#bracket8{
     font-size:17pt;
     font-weight:400;
     color:#eee;
@@ -175,8 +176,7 @@ body {
 #bracket4,
 #bracket5,
 #bracket6,
-#bracket7,
-#bracket8{
+#bracket7{
     font-size:15pt;
     font-weight:400;
     color:#eee;
@@ -187,13 +187,20 @@ body {
 #else-if, 
 #else2, 
 #else3,
-#else4 {
+#else4,
+#or1,
+#or2,
+#or3 {
     color:#eee;
     font-weight:normal;
     /* font-size:12pt; */
 }
-
-
+/* #or2,
+#or3, */
+#or1
+{
+    font-size:11pt;
+}
 
 .nav li #test3{
     position: relative;
@@ -203,9 +210,10 @@ body {
     font-size: 13pt;
     color: dodgerblue;
     border-top: solid 1px #222;
+    font-size: 12pt;
 }
-.nav li #test4,
-.nav li #test7,
+/* .nav li #test4, */
+
 .nav li #test11{
   position: relative;
   display: flex;
@@ -215,7 +223,38 @@ body {
   color: dodgerblue;
   border-bottom: solid 1px #222;
 }
-.nav li #test6, 
+
+.nav li #test7{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  padding: 15px 15px 15px 20px;
+  font-size: 13pt;
+  color: dodgerblue;
+  /* border-bottom: solid 1px #222; */
+}
+
+.nav li #test4{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  padding: 15px 15px 15px 20px;
+  font-size: 13pt;
+  color: dodgerblue;
+  /* border-bottom: solid 1px #222; */
+}
+
+.nav li #test6{
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    padding: 15px 15px 15px 20px;
+    font-size: 13pt;
+    color: dodgerblue;
+    border-bottom: solid 1px #222;
+  }
+
+/* .nav li #test6,  */
 .nav li #test9{
   position: relative;
   display: flex;
@@ -224,7 +263,9 @@ body {
   font-size: 13pt;
   color: dodgerblue;
   border-bottom: transparent;
+  border-top: solid 1px #222;
 }
+
 
 nav li #test10{
   position: relative;
@@ -266,7 +307,7 @@ nav li #test8{
   font-size: 13pt;
   color: dodgerblue;
   /* border-top: transparent; */
-  border-top:solid 1px #222;
+  border-bottom:solid 1px #222;
 }
 
 
@@ -276,7 +317,7 @@ nav li #test8{
     top:110px;
     left:295px;
     width:500px;
-    height:250px;
+    height:300px;
     background-color: #2a2a2a;
     /* border-right:2px solid #eee;
     border-left:2px solid #eee;
@@ -297,7 +338,7 @@ nav li #test8{
   top:165px;
   left:295px;
   width:500px;
-  height:170px;
+  height:350px;
   background-color: #2a2a2a;
   /* border-right:2px solid #eee;
   border-left:2px solid #eee;
@@ -318,10 +359,10 @@ nav li #test8{
 #keep-working{
   display:none;
   position:absolute;
-  top:290px;
+  top:350px;
   left:295px;
   width:500px;
-  height:330px;
+  height:150px;
   background-color: #2a2a2a;
   /* border-right:2px solid #eee;
   border-left:2px solid #eee;
@@ -1002,11 +1043,11 @@ left:62.5%;
 #pg{
     font: 16px/1 'Montserrat', sans-serif;
     font-weight: bold;
-    width:420px;
+    width:500px;
     height:50px;
     position: absolute;
     top:0%;
-    left:36%;
+    left:34%;
     border:1px solid rgba(0, 0, 0 , 0.2);
     padding:15px;
     background-color: #2a2a2a;
@@ -1023,12 +1064,47 @@ left:62.5%;
 #task{
     display:none;
     position:absolute;
-    top:5%;
-    left:36%;
-    width:420px;
-    height:450px;
+    top:6%;
+    left:430px;
+    width:280px;
+    height:315px;
     font-family:'Montserrat', sans-serif;
-    font-size:10pt;
+    font-size:9.5pt;
+    color:#eee;
+    background-color: #2a2a2a;
+    border: solid 2px #eee;
+    font-weight: normal;
+    padding:10px;
+    padding-left:25px;
+    border-right:transparent;
+}
+
+#task2{
+    display:none;
+    position:absolute;
+    top:6%;
+    left:710px;
+    width:280px;
+    height:315px;
+    font-family:'Montserrat', sans-serif;
+    font-size:8pt;
+    color:#eee;
+    background-color: #2a2a2a;
+    border: solid 2px #eee;
+    font-weight: normal;
+    padding:10px;
+    padding-left:25px;
+}
+
+#task3{
+    display:none;
+    position:absolute;
+    top:6%;
+    left:990px;
+    width:280px;
+    height:315px;
+    font-family:'Montserrat', sans-serif;
+    font-size:8pt;
     color:#eee;
     background-color: #2a2a2a;
     border: solid 2px #eee;
@@ -1067,16 +1143,17 @@ left:62.5%;
     top:5%;
     right:1px;
     width:450px;
-    height:325px;
+    height:440px;
     font-family:'Montserrat', sans-serif;
-    font-size:11pt;
+    font-size:9pt;
     color:#eee;
     background-color: #2a2a2a;
     border: solid 2px #eee;
     border-bottom:dashed 1px #eee;
     font-weight: normal;
-    padding:10px;
+    padding:8px;
     padding-left:25px;
+    /* padding-top:-8px; */
 }
 #small{
     font-size:8.5pt;
@@ -1113,7 +1190,7 @@ left:62.5%;
 }
 #codeblock1{
     position:absolute;
-    top:360px;
+    top:480px;
     right:1px;
     width:450px;
     height:50px;
@@ -1122,7 +1199,7 @@ left:62.5%;
     border-left:2px solid #eee;
     font-family:'Montserrat', sans-serif;
     background-color: #2a2a2a;
-    font-size:14pt;
+    font-size:12pt;
     color:dodgerblue;
     font-weight: normal;
     padding:10px;
@@ -1135,7 +1212,7 @@ left:62.5%;
 
 #codeblock2{
     position:absolute;
-    top:410px;
+    top:530px;
     right:1px;
     width:450px;
     height:95px;
@@ -1151,10 +1228,10 @@ left:62.5%;
 }
 #codeblock3{
     position:absolute;
-    top:505px;
+    top:625px;
     right:1px;
     width:450px;
-    height:97px;
+    height:150px;
     border-right:2px solid #eee;
     border-left:2px solid #eee;
     font-family:'Montserrat', sans-serif;
@@ -1183,7 +1260,8 @@ left:62.5%;
     padding-left:25px;
 }
 #white,
-#white2{
+#white2,
+#white3{
     color:#eee;
     text-decoration: underline;
     text-decoration-style: solid 1px;
@@ -1197,7 +1275,8 @@ left:62.5%;
 }
 
 
-#hidden2{
+#hidden2,
+#hidden3{
     color:transparent;
    
 }
@@ -1210,7 +1289,9 @@ left:62.5%;
     font-size:14.5pt;
     color:#eee;
 }
-#else-if1,
+#else-if1{
+    color:dodgerblue;
+}
 #else-if2{
     color:transparent;
     text-decoration: underline;
@@ -3359,9 +3440,19 @@ border:tomato 5px inset;
 .ih-item.square.colored.effect7{
     position: absolute;
     top:48%;
-    left:55%;
-    margin-top:-10px;
-    left:630px;
+    left:20%;
+    /* margin-top:0px; */
+    left:400px;
+    height:300px;
+    width:450px;
+    border:inset 5px #404040;
+}
+.ih-item.square.effect7{
+    position: absolute;
+    top:48%;
+    left:20%;
+    /* margin-top:0px; */
+    left:700px;
     height:300px;
     width:450px;
     border:inset 5px #404040;
@@ -3473,3 +3564,5 @@ ih-item.square.effect7 {
     -o-transform: scale(1);
     transform: scale(1);
   }
+
+  

@@ -63,44 +63,45 @@
         <a id="test0" onmouseover="showWork()" onmouseout="hideWork()">
             <span id ="blue1">While (true)</span>
             <span id="bracket1"> &nbsp{</span>
-        </a>   
+        </a> 
+        
+        
         <a id="test3" onmouseover="showAgain()" onmouseout="hideAgain()">
-            <span id="blue2" onmouseover="explainAction2()" onmouseout="hideAction2()">if</span>
-            <span id="if-statement">&nbsp teamMateIsOpen</span>
+            <span id="blue2" onmouseover="explainAction2()" onmouseout="hideAction2()">if &nbsp</span>
             <br>
-            <span id="bracket2">&nbsp {</span>
-            <br>
+            <span id="if-statement">yourSkills==theirSkills</span>
         </a> 
         <a id="test4">
-            <span id="if-statement2">passTheBall( )</span>
-            <span id="bracket3">&nbsp }</span>
+            <span id="if-statement2">|| strongShooter</span>
+            <span id="bracket3">&nbsp {</span>
         </a>
         <a id="test6" onmouseover="showKeep()" onmouseout="hideKeep()">
-          <span id="blue3">else if</span>
-          <!-- <span id="bracket4">&nbsp {</span> -->
-        </a>
-        <a id="test5">
-          <span id="else-if">&nbsp ! teamMateIsOpen</span>
-          <span id="bracket5">&nbsp {</span>
+          <span id="or1">playPersonToPerson( )</span>
+          <br>
+          <span id="bracket4">&nbsp }</span>
+        </a> 
+
+        
+        <a id="test5"  onmouseover="showSpans()" onmouseout="hideSpans()">
+          <span id="blue3">if &nbsp</span>
+          <span id="or2">! strongShooter ||</span>
         </a>
         <a id="test7">
-          <span id=else2>dribbleTheBall( )</span>
+          <span id="or3"> ! strongDefender</span>
           <br>
-          <span id="bracket6">&nbsp }</span>
+          <span id="bracket6">&nbsp {</span>
         </a>
-        <a id="test8"  onmouseover="showSpans()" onmouseout="hideSpans()">
-          <span id="blue4">else if</span>
-          <!-- <br>
-          <span id="else3">inPositiontoScore</span> -->
-        </a>
-        <a id="test9">
-          <span id="else3">inPositionToScore( )</span>
-          <span id="bracket7">&nbsp {</span>
-        </a>
-        <a id="test11">
-          <span id="else4">takeTheShot( )</span>
+        <a id="test8">
+          <span id="else3">playZone( )</span>
+          <span id="bracket7">&nbsp }</span>
           <span id="bracket8">&nbsp }</span>
         </a>
+        <a id="test9"></a>
+
+        <!-- <a id="test11">
+          <span id="else4">takeTheShot( )</span>
+          <span id="bracket8">&nbsp }</span>
+        </a>  -->
 
 
         <!-- <a id="test4">if receiverIsOpen &nbsp<span id="emphasis3"> {</span></a>
@@ -123,70 +124,122 @@
     <hr>
   </div>
 </div>
-<div class="ih-item square colored effect7" onclick=changeDefense() ondblclick="changeDefenseBack()"><a href="#">
+<div class="ih-item square colored effect7"><a href="#">
     <div class="img"><img src="img/m2m.jpg" alt="img"></div>
-    <div id="defense-img"><img src="img/m2m.jpg"></div> -->
+    <!-- <div id="defense-img"><img src="img/m2m.jpg"></div> -->
     <div class="info">
       <h3 id="d-type">Person-to-Person</h3>
       <p id="defense">Defense</p>
     </div></a> 
 </div>
 
+<div class="ih-item square effect7"><a href="#">
+  <div class="img"><img src="img/zone.jpg" alt="img"></div>
+  <!-- <div id="defense-img"><img src="img/zone.jpg"></div> -->
+  <div class="info">
+    <h3 id="d-type">Zone</h3>
+    <p id="defense">Defense</p>
+  </div></a> 
+</div>
 
 
 
-
-
-<!-- <div id="execute">Executing their Code</div>
+<div id="execute">Executing their Code</div>
 <div id="pg" onmouseover="showTask()">Defense</div>
 <div id ="task" onclick="hideTask()">
-  <a id="close-box" href="">X</a><br>
-  POINT GUARD CODING CONCEPTS<br>&bull; Past Concepts: "if" and "else if" statements, using the NOT Operator -->
-   
-  
-  <!-- <br>&bull; New Concept: While Loops<br> -->
-    
-    <!-- Each position has two different roles:<br><br> 
-    1. The role they play While on Offense<br>
-    2. The role they play While on Defense.<br><br>
-    While on Offense, the role of the Point Guard is to control the ball and make sure that it gets to the right players at the right time— so that they can score.  Point Guards accomplish this in many different ways; the Point Guard in this scenario does the following:<br>
+  <br>
+    Just like how there are many different ways to go about scoring (Offense), there are many different ways to go about preventing the other team from scoring (Defense).<br><br>
+    Two common Defensive Strategies are:
     <br>
-    &#x25cf; Their first choice is to find a teammate that <span class="underline">is Open</span>, and pass the ball.<br>
-    &#x25cf; When a teammate <span class="underline">is Not Open</span>, they dribble the ball to find an open pass.<br>
-    &#x25cf; Finally, if they are the one who is in the best <span class="underline">position to score</span>, they take the shot.<br><br>
-     -->
-    
-    <!-- Since this is the role a Point Guard plays on Offense, we will have Offense = true.  That means that the Point Guard plays this role WHILE they are on Offense.  When Offense = false, that means they are on Defense so their role would be different. -->
+    <br>
+    1. Person-to-Person Defense
+    <br>
+    <br>
+    2. Zone Defense
+</div>
+<div id="task2">
+  Person-to-Person is the most common Defense.  In Person-to-Person Defense, each player is 
+  matched with a player on the opposing team— and they guard that person the entire time.
+  <br><br>
+  A team will play Person-to-Person <span style="color:dodgerblue; font-weight:bold; font-size:12pt;">if:</span>
+  <br>
+  &#x25cf; Each player on your team matches up with a player on the opposing team.
+  <br>
+  <br>
+  &#x25cf; In other words, their<br> <span style="color:black;font-weight:bold; background-color:yellow;">skills are equal </span>.
+  <br>
+  <br>
+  &#x25cf; <span style="color:black;font-weight:bold; background-color:yellow;">OR</span> the other team has a <span style="color:black;font-weight:bold; background-color:yellow;">really strong offensive player</span>.
+</div>
+<div id="task3">
+    <a id="close-box" href="">X</a><br>
+  In a Zone Defense, each player guards a specific area; they guard anyone who comes into their space: making sure that no one who enters their space scores.
+  <br><br>
+  A team will play a Zone <span style="color:dodgerblue; font-weight:bold; font-size:12pt;">if:</span>
+  <br>
+  <br>
+  &#x25cf; There are players on the other team that are <span style="color:black;font-weight:bold; background-color:yellow;">not strong shooters</span> (so if you can keep them from getting close to the basket, they will have a much harder time scoring).
+  <br>
+  <br>
+  &#x25cf; <span style="color:black;font-weight:bold; background-color:yellow;">OR </span>there is a player (or two) on your team that is <span style="color:black;font-weight:bold; background-color:yellow;">not a strong defender</span> (so a zone allows a strong defender in the area next to theirs to help them).
+</div>
 
-    <!-- Since this is the role a Point Guard plays on Offense, we will have Offense = true.  This means that the Point Guard plays this role WHILE they are on Offense.  When Offense = false, this means they are on defense so this code wouldn't apply to them then.
-    <br>YOUR TASK<br>
-    1. Modify the While statement to show that this code is followed While Offense is true.<br>
-    2. Complete the if and else if statements for what the Point Guard should do in different situations: teamMateIsOpen, ! teamMateIsOpen, openShot. -->
 
-<!-- </div> -->
-
-
-
-<!-- <div class="your-code" onmouseover="showYourCode()">Your Task</div>
+ <div class="your-code" onmouseover="showYourCode()">Your Task</div>
 <div id="write-code"onmouseover="showYourCode()"onclick="closeTaskPanel()">
   <div id="close-box">X</div><br>
-    <span id="small">Since this is the role a Point Guard plays on Offense, we will have <span id="notice-me">Offense = true</span>.  
-    That means that the Point Guard plays this role <span id="notice-me">While </span> they are on <span id="notice-me">Offense</span>.<br><br>
-    When <span id="notice-me">Offense = false</span>, that means they are on Defense so their role would be different.<br><br><span id="notice-me2">For Your Point Guard Code:</span><br>&#x25cf; Modify the While statement to show that this code is followed While Offense is true.<br>&#x25cf; Complete the first "if" statement, and add additional "else if" statements, to have the Point Guard carry out actions under different conditions: &nbsp teamMateIsOpen,&nbsp  ! teamMateIsOpen, &nbsp openShot.</span>
+    Since these are strategies that teams use on Defense, <br><span id="notice-me">Defense = true</span>.  
+    That means that a team only uses these strategies <span id="notice-me">While </span> they are on <span id="notice-me">Defense</span>.<br><br>
+    When <span id="notice-me">Defense = false</span>,&nbsp that means they are on Offense.<br><br><span id="notice-me2">For Your Defensive Strategies Code:</span>
+    <br>
+    &#x25cf; Modify the While statement to show that this code is followed While Defense is true.
+    <br>
+    &#x25cf; Complete the first "if" statement, and add an additional "if" statement, to help the team figure out when they should use each defensive strategy: 
+    Person-to-Person and Zone.</span>
+    <br>
+    You will use these variables when writing your code:
+    <br>
+    <br>
+    var <span style="color:dodgerblue; font-weight: bold;">yourSkills</span> = skill levels of the players on your team.
+    <br>
+    <br>
+    var <span style="color:dodgerblue; font-weight: bold;">theirSkills</span> = skill levels of the players on the opposing team.
+    <br>
+    <br>
+    var <span style="color:dodgerblue; font-weight: bold;">strongShooter</span> = a very strong Offensive Player.
+    <br>
+    <br>
+    var <span style="color:dodgerblue; font-weight: bold;">strongDefender</span> = a very strong Defensive Player.
 </div>
 <div id="see-codes" onmouseover="showYourCode()">The user would enter their code in this panel— with the support of a bank of code blocks at the bottom and predictive text— but for Demo Purposes: click on the white lines to show each code block & double click the white lines to reset them.</div>
-<div id="codeblock1" onmouseover="showYourCode()" onclick="showTrue()" ondblclick="hideTrue()">While<span id="white">(</span><span id="hidden">true</span><span id="white">)</span><span id="big-bracket">&nbsp {</span></div>
-<div id="codeblock2" onmouseover="showYourCode()" onclick="showCode2()" ondblclick="hideCode2()">if &nbsp<span id="white2">condition</span><span id="medium-bracket">&nbsp {</span><br><span id="hidden2">passTheBall( )</span><br><span id="medium-bracket">&nbsp }</span></div>
-<div id="codeblock3"  onmouseover="showYourCode()"onclick="showCode3()" ondblclick="hideCode3()">
-    <span id="else-if1">else if &nbsp</span>
-    <span id="dribble"> ! teamMateIsOpen</span>
-    <span id="hidden-bracket1">&nbsp {</span>
-    <br>
-    <span id="dribble2">dribbleTheBall( )</span>
-    <br>
-    <span id="hidden-bracket2">&nbsp }</span>
+<div id="codeblock1" onmouseover="showYourCode()" onclick="showTrue()" ondblclick="hideTrue()">
+  While<span id="white">(</span>
+  <span id="hidden">true</span>
+  <span id="white">)</span>
+  <span id="big-bracket">&nbsp {</span>
 </div>
-<div id="codeblock4" onmouseover="showYourCode()" onclick="showCode4()" ondblclick="hideCode4()">
+
+<div id="codeblock2" onmouseover="showYourCode()" onclick="showCode2()" ondblclick="hideCode2()">
+  if &nbsp<span id="white2">(condition1) &nbsp <span style="font-size:14pt;">||</span> &nbsp (condition2)</span>
+  <span id="medium-bracket">&nbsp {</span>
+  <br>
+  <span id="hidden2">playPersonToPerson( )</span>
+  <br>
+  <span id="medium-bracket">&nbsp }</span>
+</div>
+
+<div id="codeblock3"  onmouseover="showYourCode()"onclick="showCode3()" ondblclick="hideCode3()">
+    <span id="else-if1">if &nbsp</span>
+    <span id="white3"> (condition1) &nbsp <span style="font-size:14pt;">||</span> &nbsp (condition2)</span>
+    <span id="medium-bracket">&nbsp {</span>
+      <br>
+      <span id="hidden3">playZone( )</span>
+      <br>
+      <span id="medium-bracket">&nbsp }</span>
+      <br>
+      <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
+</div>
+<!-- <div id="codeblock4" onmouseover="showYourCode()" onclick="showCode4()" ondblclick="hideCode4()">
     <span id="else-if2">else if &nbsp</span>
     <span id="shot1"> inPositionToScore</span>
     <span id="hidden-bracket3">&nbsp {</span>
@@ -195,40 +248,42 @@
     <br>
     <span id="hidden-bracket4">&nbsp }</span><br>
     <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
-</div> -->
+</div>  -->
 
 
 <div id="please-work" onclick="closeWork()">
   <a id="close-box" href="">X</a>
   <br>
-    If the user forgets to include "true" in their "While" statement, the video shows the point guard dribbling the ball up the court, then
-    the point guard stalls and the ball is stolen (turnover).  Next, a commentator makes a comment such as, "Wow, it is like [player name] 
-    forgot they were playing offense" as the video fades and the "screen" is clicked off, finally the code block flashes on and off a few times.  
-    This is supposed to signal to the user that there is an error in that code block that is preventing the Point Guard from getting the Offense 
-    in motion.
+    If the user forgets to include "true" in their "While" statement, the video shows the team getting "lost in transition", as  
+    the opposing team races down the court on a fast break, and dunks on their basket.  The video then shows a slow motion recap,
+    and the commentators have the following dialogue:<br><br> 
+    First Commentator: "Looking at this transition; I don't see a single defender."
+    <br><br>
+    Second Commentator: "Yeah; it's like they forgot how to play defense."
 </div>
 
 <div id="work-again">
   <a id="close-box" href="">X</a>
   <br>
-  The user would have the option of running their code one code block at a time; a [potential] additional feature would be to 
-  include something that resembles the console, which would allow the user to track the commands as they execute: the command 
-  at play [in their code] would be highlighted.
+  There are a number of aspects in this coding challenge that might be difficult for users:<br><br>
+  &#x25cf; There is a lot of syntax involved in this challenge.
+  <br> 
+  &#x25cf; It involves three different logical operators: ! Logical NOT Operator, || Logical OR Operator, and == Equality Operator.
+  <br>
+  &#x25cf; The content is complex; users might have errors that are not really programming errors, but errors related to the content (ex. mixing up when a team would play a zone vs. person-to-person defense).
+  <br><br>
+  I do think this is a "good" challenge— it forces the user to really attend to detail.  But there are a number of ways that this challenge could be modified/leveled.
+
 </div>
 
 <div id="keep-working" onclick="closeKeep()">
     <a id="close-box" href="">X</a>
   <br>
-  Concept: different videos appear on the screen depending on the error.  The theme of the videos is that they show the
-  unintended consequences of their error(s) without the game haulting completely—unless there is a syntax error; if that 
-  is the case, a whistle blows (i.e. a "foul" is called at the point of the error).  The following is an example of what 
-  might occur when their is a logic error: let's say that for the first if statement, instead of,<br> "if teamMateIsOpen 
-  {  passTheBall( ) &nbsp}", the user put <br>"if teamMateIsOpen { dribbleTheBall( ) &nbsp}".  The video might show the 
-  point guard dribbling the ball while an open teammate tries to signal (possibly by waving their arms) that they are open.  
-  The Offensive play would continue, but would ultimately be unsuccessful.
+  I am interested in exploring ways to make this adaptive:&nbsp where the user's performance and use of supports in previous 
+  activites, determines which version of the activity they engage in for the next challenge (leveled challenges currently under devlopement).
 </div>
 
-<div id="still-working" onclick="hideStill()">
+<!-- <div id="still-working" onclick="hideStill()">
   <a id="close-box" href="">X</a>
   <br>
   Another potential feature that could be offered, would be to have some sort of code visualizer—something similar to
@@ -238,8 +293,8 @@
   user chose to use this feature while running their code, they would have to answer a 
   question at the end that corresponds with the that block's concept (as means to reinforce
   the concept(s) and assess a user's knowledge of the concept after receving support).<br><br>
-  <!-- CLICK ON THE X TO CLOSE THIS BOX. -->
-</div>
+
+</div> -->
 
 
 <!-- <div id="" -->
@@ -273,8 +328,8 @@
 </div> -->
 
 
-  <a id="back" href= "index2.html"><img id="rewind" src="img/rewind.png"></a>
-  <a id="next" href= "index4.html"><img id="forward" src="img/fast-forward.png"></a>
+  <!-- <a id="back" href= "index2.html"><img id="rewind" src="img/rewind.png"></a>
+  <a id="next" href= "index4.html"><img id="forward" src="img/fast-forward.png"></a> -->
 </div>
 <!-- <div class="drop-box" id="drop-box1" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu=""></div>
 <div class="drop-box" id="drop-box3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
