@@ -6,7 +6,7 @@
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
   <!-- <link rel="stylesheet" href="./style3.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./style2.css">
+  <link rel="stylesheet" href="./style3.css">
   <link rel="stylesheet" href="ihover-gh-pages/dist/styles/main.css">
   <link href="http://fonts.googleapis.com/css?family=Lustria|Lato:300,400,700,400italic" rel="stylesheet" type="text/css">
   <!-- <script LEsrc="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -37,7 +37,7 @@
     $('ul').slideToggle(280);
   });
 </script>
-<script type="text/javascript" src="script2.js"></script>
+<script type="text/javascript" src="script3.js"></script>
 
 
 </head>
@@ -124,40 +124,46 @@
     <hr>
   </div>
 </div>
-<div class="ih-item square colored effect7"><a href="#">
-    <div class="img"><img src="img/m2m.jpg" alt="img"></div>
-    <!-- <div id="defense-img"><img src="img/m2m.jpg"></div> -->
-    <div class="info">
-      <h3 id="d-type">Person-to-Person</h3>
-      <p id="defense">Defense</p>
-    </div></a> 
+
+
+
+<div class="ih-item square colored effect13 top_to_bottom"><a href="#">
+  <div class="img"><img src="img/ideal_screen.png" alt="img"></div>
+  <div class="info">
+    <h3>Setting a Screen</h3>
+    <p>Blocking a defender to free up your teammate.</p>
+  </div></a>
 </div>
 
-<div class="ih-item square effect7"><a href="#">
-  <div class="img"><img src="img/zone.jpg" alt="img"></div>
-  <!-- <div id="defense-img"><img src="img/zone.jpg"></div> -->
+<!-- <div class="ih-item square colored effect13 top_to_bottom"><a href="#">
+  <div class="img"><img src="img/signal.png" alt="img"></div>
   <div class="info">
-    <h3 id="d-type">Zone</h3>
-    <p id="defense">Defense</p>
-  </div></a> 
-</div>
+    <h3>Signal</h3>
+    <p>Signal your teammate that you will "Set a Screen" for them.</p>
+  </div></a>
+</div> -->
+
 
 
 
 <div id="execute">Executing their Code</div>
-<div id="pg" onmouseover="showTask()">Defense</div>
+<div id="pg" onmouseover="showTask()">Setting a Screen</div>
 <div id ="task" onclick="hideTask()">
-  <br>
-    Just like how there are many different ways to go about scoring (Offense), there are many different ways to go about preventing the other team from scoring (Defense).<br><br>
-    Two common Defensive Strategies are:
+  <a id="close-box" href="">X</a><br>
+    You have written offensive plays for when players should pass,  dribble,  or take a shot.  
+    But what does a team do when none of those three things are possible?  One way that teams 
+    solve this problem is by <span style="font-weight:bold;">Setting a Screen</span>.
     <br>
     <br>
-    1. Person-to-Person Defense
-    <br>
-    <br>
-    2. Zone Defense
-</div>
-<div id="task2">
+    <span style="font-weight:bold;">Setting a Screen</span> is when an offensive player stands 
+    in the way of a defender who is guarding their teammate.  By standing there, they block the 
+    defender from guarding their teammate— freeing up their teammate to pass or score.  There are 
+    <span style="font-weight:bold;">3 steps </span>to Setting a Screen: &nbsp <span style="font-weight:bold;">
+    Signal, Sprint, Stand</span>.
+
+    
+  </div>
+<!-- <div id="task2">
   Person-to-Person is the most common Defense.  In Person-to-Person Defense, each player is 
   matched with a player on the opposing team— and they guard that person the entire time.
   <br><br>
@@ -182,10 +188,11 @@
   <br>
   <br>
   &#x25cf; <span style="color:black;font-weight:bold; background-color:yellow;">OR </span>there is a player (or two) on your team that is <span style="color:black;font-weight:bold; background-color:yellow;">not a strong defender</span> (so a zone allows a strong defender in the area next to theirs to help them).
-</div>
+</div> -->
 
+<!-- //////////////////////////////////////////////////////////////////// -->
 
- <div class="your-code" onmouseover="showYourCode()">Your Task</div>
+ <!-- <div class="your-code" onmouseover="showYourCode()">Your Task</div>
 <div id="write-code"onmouseover="showYourCode()"onclick="closeTaskPanel()">
   <div id="close-box">X</div><br>
     Since these are strategies that teams use on Defense, <br><span id="notice-me">Defense = true</span>.  
@@ -210,25 +217,25 @@
     <br>
     <br>
     var <span style="color:dodgerblue; font-weight: bold;">strongDefender</span> = a very strong Defensive Player.
-</div>
-<!-- <div id="see-codes" onmouseover="showYourCode()">The user would enter their code in this panel— with the support of a bank of code blocks at the bottom and predictive text— but for Demo Purposes: click on the white lines to show each code block & double click the white lines to reset them.</div> -->
-<div id="codeblock1" onmouseover="showYourCode()" onclick="showTrue()" ondblclick="hideTrue()">
+</div> -->
+
+<!-- <div id="codeblock1" onmouseover="showYourCode()" onclick="showTrue()" ondblclick="hideTrue()">
   While<span id="white">(</span>
   <span id="hidden">true</span>
   <span id="white">)</span>
   <span id="big-bracket">&nbsp {</span>
-</div>
+</div> -->
 
-<div id="codeblock2" onmouseover="showYourCode()" onclick="showCode2()" ondblclick="hideCode2()">
+<!-- <div id="codeblock2" onmouseover="showYourCode()" onclick="showCode2()" ondblclick="hideCode2()">
   if &nbsp<span id="white2">(condition1) &nbsp <span style="font-size:14pt;">||</span> &nbsp (condition2)</span>
   <span id="medium-bracket">&nbsp {</span>
   <br>
   <span id="hidden2">playPersonToPerson( )</span>
   <br>
   <span id="medium-bracket">&nbsp }</span>
-</div>
+</div> -->
 
-<div id="codeblock3"  onmouseover="showYourCode()"onclick="showCode3()" ondblclick="hideCode3()">
+<!-- <div id="codeblock3"  onmouseover="showYourCode()"onclick="showCode3()" ondblclick="hideCode3()">
     <span id="else-if1">if &nbsp</span>
     <span id="white3"> (condition1) &nbsp <span style="font-size:14pt;">||</span> &nbsp (condition2)</span>
     <span id="medium-bracket">&nbsp {</span>
@@ -238,7 +245,10 @@
       <span id="medium-bracket">&nbsp }</span>
       <br>
       <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
-</div>
+</div> -->
+
+<!-- //////////////////////////////////////////////////////////////////// -->
+
 <!-- <div id="codeblock4" onmouseover="showYourCode()" onclick="showCode4()" ondblclick="hideCode4()">
     <span id="else-if2">else if &nbsp</span>
     <span id="shot1"> inPositionToScore</span>
@@ -328,8 +338,7 @@
 </div> -->
 
 
-  <a id="back" href= "index.html"><img id="rewind" src="img/rewind.png"></a>
-  <a id="next" href= "index3.html"><img id="forward" src="img/fast-forward.png"></a>
+  <a id="back" href= "index2.html"><img id="rewind" src="img/rewind.png"></a>
 
 
   <!-- <a id="next" href= "index4.html"><img id="forward" src="img/fast-forward.png"></a> -->

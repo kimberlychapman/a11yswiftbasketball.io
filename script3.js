@@ -3,30 +3,37 @@ $(document).ready(function() {
       $('.content').toggleClass('content-is-open');
     });
   });
-  function allowDrop(ev) {
-    ev.preventDefault();
-  }
-  
-  function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-  }
-  
-  function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-  }
 
-  function changeDefense(){
-      document.querySelector('img').src="img/zone.jpg";
+
+
+
+
+
+
+//   function allowDrop(ev) {
+//     ev.preventDefault();
+//   }
+  
+//   function drag(ev) {
+//     ev.dataTransfer.setData("text", ev.target.id);
+//   }
+  
+//   function drop(ev) {
+//     ev.preventDefault();
+//     var data = ev.dataTransfer.getData("text");
+//     ev.target.appendChild(document.getElementById(data));
+//   }
+
+//   function changeDefense(){
+//       document.querySelector('img').src="img/zone.jpg";
     //   document.getElementById('defense-img').src="img/zone.jpg";
-      document.getElementById('d-type').innerHTML="Zone";
-  }
+//       document.getElementById('d-type').innerHTML="Zone";
+//   }
 
-  function changeDefenseBack(){
-    document.querySelector('img').src="img/m2m.jpg";
-    document.getElementById('d-type').innerHTML="Person-to-Person";
-}
+//   function changeDefenseBack(){
+//     document.querySelector('img').src="img/m2m.jpg";
+//     document.getElementById('d-type').innerHTML="Person-to-Person";
+// }
 
   function showTrue(){
       document.getElementById('hidden').style.color="dodgerblue";
@@ -79,6 +86,9 @@ function showWork(){
   document.getElementById('task2').style.display="none";
   document.getElementById('task3').style.display="none";
 
+//   ////////////////////////////
+//   document.querySelector('.ih-item.square.colored.effect13.top_to_bottom ').style.display="none;"
+//   ////////////////////////////
   document.getElementById('please-work').style.display="block";
   document.getElementById('blue1').style.backgroundColor="yellow";
   document.getElementById('bracket1').style.backgroundColor="yellow";
@@ -237,37 +247,37 @@ function hideTask(){
 
 function showYourCode(){
 
-  document.getElementById('task').style.display="none";
-  document.getElementById('task2').style.display="none";
-  document.getElementById('task3').style.display="none";
-  document.getElementById('keep-working').style.display="none";
-  document.getElementById('please-work').style.display="none";
-  document.getElementById('work-again').style.display="none";
-//   document.getElementById('still-working').style.display="none";
-
-  document.getElementById('write-code').style.display="block";
-  // document.getElementById('see-codes').style.display="block";
-  document.getElementById('codeblock1').style.display="block";
-  document.getElementById('codeblock2').style.display="block";
-  document.getElementById('codeblock3').style.display="block";
-  // document.getElementById('codeblock4').style.display="block";
-}
-
-function closeTaskPanel(){
-  document.getElementById('write-code').style.display="none";
-  // document.getElementById('see-codes').style.display="none";
-  document.getElementById('codeblock1').style.display="none";
-  document.getElementById('codeblock2').style.display="none";
-  document.getElementById('codeblock3').style.display="none";
-  // document.getElementById('codeblock4').style.display="none";
-}
-
-function closeDetails(){
-  document.getElementById('keep-working').style.display="none";
-  document.getElementById('please-work').style.display="none";
-  document.getElementById('work-again').style.display="none";
-//   document.getElementById('still-working').style.display="none";
-}
+    document.getElementById('task').style.display="none";
+    document.getElementById('task2').style.display="none";
+    document.getElementById('task3').style.display="none";
+    document.getElementById('keep-working').style.display="none";
+    document.getElementById('please-work').style.display="none";
+    document.getElementById('work-again').style.display="none";
+  //   document.getElementById('still-working').style.display="none";
+  
+    document.getElementById('write-code').style.display="block";
+    // document.getElementById('see-codes').style.display="block";
+    document.getElementById('codeblock1').style.display="block";
+    document.getElementById('codeblock2').style.display="block";
+    document.getElementById('codeblock3').style.display="block";
+    // document.getElementById('codeblock4').style.display="block";
+  }
+  
+  function closeTaskPanel(){
+    document.getElementById('write-code').style.display="none";
+    // document.getElementById('see-codes').style.display="none";
+    document.getElementById('codeblock1').style.display="none";
+    document.getElementById('codeblock2').style.display="none";
+    document.getElementById('codeblock3').style.display="none";
+    // document.getElementById('codeblock4').style.display="none";
+  }
+  
+  function closeDetails(){
+    document.getElementById('keep-working').style.display="none";
+    document.getElementById('please-work').style.display="none";
+    document.getElementById('work-again').style.display="none";
+  //   document.getElementById('still-working').style.display="none";
+  }
 
 
 
