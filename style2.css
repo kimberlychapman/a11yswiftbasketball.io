@@ -1039,28 +1039,31 @@ left:62.5%;
     -o-transform: translateY(0);
     transform: translateY(0);
     }
+    #pg{
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      width:500px;
+      height:50px;
+      position: absolute;
+      top:0%;
+      left:34%;
+      border:1px solid rgba(0, 0, 0 , 0.2);
+      padding:15px;
+      background-color: #2a2a2a;
+      /* line-height: 50px; */
+      border-left:solid 2px #eee;
+      border-right:solid 2px #eee;
+  }
   
-#pg{
+  #play-pg{
     font: 16px/1 'Montserrat', sans-serif;
     font-weight: bold;
-    width:500px;
-    height:50px;
-    position: absolute;
-    top:0%;
-    left:34%;
-    border:1px solid rgba(0, 0, 0 , 0.2);
-    padding:15px;
-    background-color: #2a2a2a;
     color:#eee;
-    /* line-height: 50px; */
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
-    border-left:solid 2px #eee;
-    border-right:solid 2px #eee;
-
-
-}
+  }
 #task{
     display:none;
     position:absolute;
@@ -1118,23 +1121,37 @@ left:62.5%;
 } */
 
 .your-code{
-    font: 16px/1 'Montserrat', sans-serif;
-    font-weight: bold;
-    width:450px;
-    height:50px;
-    position: absolute;
-    top:0%;
-    right:1px;
-    border:1px solid rgba(0, 0, 0 , 0.2);
-    padding:15px;
-    background-color: #2a2a2a;
-    color:#eee;
-    /* line-height: 50px; */
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    border-left:solid 2px #eee;
-    border-right:solid 2px #eee;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  width:450px;
+  height:50px;
+  position: absolute;
+  top:0%;
+  right:1px;
+  border:1px solid rgba(0, 0, 0 , 0.2);
+  padding:15px;
+  background-color: #2a2a2a;
+  border-left:solid 2px #eee;
+  border-right:solid 2px #eee;
+  text-align: center;
+}
+
+#your-code-title{
+font: 16px/1 'Montserrat', sans-serif;
+font-weight: bold;
+color:#eee;
+/* line-height: 50px; */
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 5px;
+/* border-left:solid 2px #eee;
+border-right:solid 2px #eee; */
+}
+#the-drop,
+#the-drop-down{
+  height:15px;
+  width:15px;
 }
 
 #write-code{
@@ -1189,6 +1206,7 @@ left:62.5%;
     /* text-align: center; */
 }
 #codeblock1{
+    /* display:none; */
     position:absolute;
     top:480px;
     right:1px;

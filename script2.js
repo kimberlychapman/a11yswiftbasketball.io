@@ -92,6 +92,9 @@ function hideWork(){
   document.getElementById('bracket1').style.color="#eee";
 }
 
+function closeAgain(){
+  document.getElementById('work-again').style.display="none";
+}
 
 
 
@@ -168,9 +171,9 @@ function hideAgain(){
 //   document.getElementById('bracket6').style.backgroundColor="transparent";
 //   document.getElementById('bracket6').style.color="#eee";
 // }
-// function closeKeep(){
-//   document.getElementById('keep-working').style.display="none";
-// }
+function closeKeep(){
+  document.getElementById('keep-working').style.display="none";
+}
 
 // function showStill(){
 //   document.getElementById('still-working').style.display="block";
@@ -223,20 +226,44 @@ function showTask(){
   document.getElementById('task').style.display="block";
   document.getElementById('task2').style.display="block";
   document.getElementById('task3').style.display="block";
-//   document.getElementById('still-working').style.display="none";
+  document.getElementById('the-drop').src="img/up-arrow.png";
+  // document.getElementById('still-working').style.display="none";
   document.getElementById('keep-working').style.display="none";
   document.getElementById('please-work').style.display="none";
   document.getElementById('work-again').style.display="none";
+  document.getElementById('the-drop').src="img/up-arrow.png";
+
 }
 
 function hideTask(){
   document.getElementById('task').style.display="none";
+  document.getElementById('the-drop').src="img/drop-down-arrow.png";
   document.getElementById('task2').style.display="none";
   document.getElementById('task3').style.display="none";
+  // document.getElementById('still-working').style.display="none";
+  // document.getElementById('keep-working').style.display="none";
+  // document.getElementById('please-work').style.display="none";
+  // document.getElementById('work-again').style.display="none";
 }
 
-function showYourCode(){
+// function showTask(){
+//   document.getElementById('task').style.display="block";
+//   document.getElementById('task2').style.display="block";
+//   document.getElementById('task3').style.display="block";
+//   document.getElementById('still-working').style.display="none";
+  // document.getElementById('keep-working').style.display="none";
+//   document.getElementById('please-work').style.display="none";
+//   document.getElementById('work-again').style.display="none";
+// }
 
+// function hideTask(){
+//   document.getElementById('task').style.display="none";
+//   document.getElementById('task2').style.display="none";
+//   document.getElementById('task3').style.display="none";
+// }
+
+function showYourCode(){
+  document.getElementById('the-dropdown').src="img/up-arrow.png";
   document.getElementById('task').style.display="none";
   document.getElementById('task2').style.display="none";
   document.getElementById('task3').style.display="none";
@@ -254,6 +281,7 @@ function showYourCode(){
 }
 
 function closeTaskPanel(){
+  document.getElementById('the-dropdown').src="img/drop-down-arrow.png";
   document.getElementById('write-code').style.display="none";
   // document.getElementById('see-codes').style.display="none";
   document.getElementById('codeblock1').style.display="none";

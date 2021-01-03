@@ -154,9 +154,12 @@
     </div></a>
 </div>
 <div id="execute">Executing their Code</div>
-<div id="pg" onmouseover="showTask()">Point Guard</div>
-<div id ="task" onclick="hideTask()">
-  <a id="close-box" href="">X</a><br>
+<div id="pg" onclick="showTask()">
+  <div id="play-pg">Point Guard</div>
+  <img id="the-drop" src="img/drop-down-arrow.png">
+</div>
+<div id ="task">
+  <div id="close-box" onclick="hideTask()">X</div><br>
     POINT GUARD PROGRAMMING CONCEPTS: 
     <br>
     <br>
@@ -180,38 +183,47 @@
     2. Complete the if and else if statements for what the Point Guard should do in different situations: teamMateIsOpen, ! teamMateIsOpen, openShot. -->
 
 </div>
-<div class="your-code" onmouseover="showYourCode()">Your Task</div>
-<div id="write-code"onmouseover="showYourCode()"onclick="closeTaskPanel()">
-  <div id="close-box">X</div><br>
+<div class="your-code">
+  <div id="your-code-title">Your Task</div>
+  <img id="the-dropdown" src="img/drop-down-arrow.png" onclick="showYourCode()">
+</div>
+<div id="write-code">
+<div id="close-box"onclick="closeTaskPanel()">X</div><br>
     <span id="small">Since this is the role a Point Guard plays on Offense, we will have <span id="notice-me">Offense = true</span>.  
     That means that the Point Guard plays this role <span id="notice-me">While </span> they are on <span id="notice-me">Offense</span>.<br><br>
     When <span id="notice-me">Offense = false</span>, that means they are on Defense so their role would be different.<br><br><span id="notice-me2">For Your Point Guard Code:</span><br>&#x25cf; Modify the While statement to show that this code is followed While Offense is true.<br>&#x25cf; Complete the first "if" statement, and add additional "else if" statements, to have the Point Guard carry out actions under different conditions: &nbsp teamMateIsOpen,&nbsp  ! teamMateIsOpen, &nbsp openShot.</span>
 </div>
 <!-- <div id="see-codes" onmouseover="showYourCode()">The user would enter their code in this panel— with the support of a bank of code blocks at the bottom and predictive text— but for Demo Purposes: click on the white lines to show each code block & double click the white lines to reset them.</div> -->
-<div id="codeblock1" onmouseover="showYourCode()" onclick="showTrue()" ondblclick="hideTrue()">While<span id="white">(</span><span id="hidden">true</span><span id="white">)</span><span id="big-bracket">&nbsp {</span></div>
-<div id="codeblock2" onmouseover="showYourCode()" onclick="showCode2()" ondblclick="hideCode2()">if &nbsp<span id="white2">condition</span><span id="medium-bracket">&nbsp {</span><br><span id="hidden2">passTheBall( )</span><br><span id="medium-bracket">&nbsp }</span></div>
-<div id="codeblock3"  onmouseover="showYourCode()"onclick="showCode3()" ondblclick="hideCode3()">
-    <span id="else-if1">else if &nbsp</span>
-    <span id="dribble"> ! isOpen</span>
-    <span id="hidden-bracket1">&nbsp {</span>
-    <br>
-    <span id="dribble2">dribbleTheBall( )</span>
-    <br>
-    <span id="hidden-bracket2">&nbsp }</span>
+<div id="codeblock1"  onclick="showTrue()" ondblclick="hideTrue()">While<span id="white">(</span><span id="hidden">true</span><span id="white">)</span><span id="big-bracket">&nbsp {</span></div>
+<div id="codeblock2"  onclick="showCode2()" ondblclick="hideCode2()">if &nbsp<span id="white2">(condition)</span>
+  <span id="medium-bracket">&nbsp {</span>
+  <br>
+  <span id="hidden2">passTheBall( )</span>
+  <br>
+  <span id="medium-bracket">&nbsp }</span>
 </div>
-<div id="codeblock4" onmouseover="showYourCode()" onclick="showCode4()" ondblclick="hideCode4()">
+<div id="codeblock3"  onclick="showCode3()" ondblclick="hideCode3()">
+    <span id="else-if1">else if &nbsp</span>
+    <span id="white3"> (condition)</span>
+    <span id="medium-bracket">&nbsp {</span>
+    <br>
+    <span id ="dribble2" >dribbleTheBall( )</span>
+    <br>
+    <span id="medium-bracket">&nbsp }</span>
+</div>
+<div id="codeblock4"  onclick="showCode4()" ondblclick="hideCode4()">
     <span id="else-if2">else if &nbsp</span>
-    <span id="shot1"> inPositionToScore</span>
-    <span id="hidden-bracket3">&nbsp {</span>
+    <span id="white4"> (condition)</span>
+    <span id="medium-bracket">&nbsp {</span>
     <br>
     <span id="shot2">takeTheShot( )</span>
     <br>
-    <span id="hidden-bracket4">&nbsp }</span><br>
+    <span id="medium-bracket">&nbsp }</span>
     <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
 </div>
 
 
-<div id="please-work" onclick="closeWork()">
+<div id="please-work" onclick="closeWork()" onmouseleave=closeWork()>
   <a id="close-box" href="">X</a>
   <br>
     If the user forgets to include "true" in their "While" statement, the video shows the point guard dribbling the ball up the court, then
@@ -221,7 +233,7 @@
     in motion.
 </div>
 
-<div id="work-again">
+<div id="work-again" onclick="closeAgain()" onmouseleave=closeAgain()>
   <a id="close-box" href="">X</a>
   <br>
   The user would have the option of running their code one code block at a time; a [potential] additional feature would be to 
@@ -229,7 +241,7 @@
   at play [in their code] would be highlighted.
 </div>
 
-<div id="keep-working" onclick="closeKeep()">
+<div id="keep-working" onclick="closeKeep()" onmouseleave="closeKeep()">
     <a id="close-box" href="">X</a>
   <br>
   Concept: different videos appear on the screen depending on the error.  The theme of the videos is that they show the
@@ -241,7 +253,7 @@
   The Offensive play would continue, but would ultimately be unsuccessful.
 </div>
 
-<div id="still-working" onclick="hideStill()">
+<div id="still-working" onclick="hideStill()" onmouseleave="hideStill()">
   <a id="close-box" href="">X</a>
   <br>
   Another potential feature that could be offered, would be to have some sort of code visualizer—something similar to

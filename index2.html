@@ -145,8 +145,12 @@
 
 
 <div id="execute">Executing their Code</div>
-<div id="pg" onmouseover="showTask()">Defense</div>
-<div id ="task" onclick="hideTask()">
+<div id="pg" onclick="showTask()">
+  <div id="play-pg">Defense</div>
+  <img id="the-drop" src="img/drop-down-arrow.png">
+</div>
+</div>
+<div id ="task">
   <br>
     Just like how there are many different ways to go about scoring (Offense), there are many different ways to go about preventing the other team from scoring (Defense).<br><br>
     Two common Defensive Strategies are:
@@ -172,7 +176,7 @@
   &#x25cf; <span style="color:black;font-weight:bold; background-color:yellow;">OR</span> the other team has a <span style="color:black;font-weight:bold; background-color:yellow;">really strong offensive player</span>.
 </div>
 <div id="task3">
-    <a id="close-box" href="">X</a><br>
+<div id="close-box" onclick="hideTask()">X</div><br>
   In a Zone Defense, each player guards a specific area; they guard anyone who comes into their space: making sure that no one who enters their space scores.
   <br><br>
   A team will play a Zone <span style="color:dodgerblue; font-weight:bold; font-size:12pt;">if:</span>
@@ -185,8 +189,11 @@
 </div>
 
 
- <div class="your-code" onmouseover="showYourCode()">Your Task</div>
-<div id="write-code"onmouseover="showYourCode()"onclick="closeTaskPanel()">
+<div class="your-code"onclick="showYourCode()">
+  <div id="your-code-title" >Your Task</div>
+  <img id="the-dropdown" src="img/drop-down-arrow.png">
+</div>
+<div id="write-code"onclick="closeTaskPanel()">
   <div id="close-box">X</div><br>
     Since these are strategies that teams use on Defense, <br><span id="notice-me">Defense = true</span>.  
     That means that a team only uses these strategies <span id="notice-me">While </span> they are on <span id="notice-me">Defense</span>.<br><br>
@@ -212,14 +219,14 @@
     var <span style="color:dodgerblue; font-weight: bold;">strongDefender</span> = a very strong Defensive Player.
 </div>
 <!-- <div id="see-codes" onmouseover="showYourCode()">The user would enter their code in this panel— with the support of a bank of code blocks at the bottom and predictive text— but for Demo Purposes: click on the white lines to show each code block & double click the white lines to reset them.</div> -->
-<div id="codeblock1" onmouseover="showYourCode()" onclick="showTrue()" ondblclick="hideTrue()">
+<div id="codeblock1"  onclick="showTrue()" ondblclick="hideTrue()">
   While<span id="white">(</span>
   <span id="hidden">true</span>
   <span id="white">)</span>
   <span id="big-bracket">&nbsp {</span>
 </div>
 
-<div id="codeblock2" onmouseover="showYourCode()" onclick="showCode2()" ondblclick="hideCode2()">
+<div id="codeblock2"  onclick="showCode2()" ondblclick="hideCode2()">
   if &nbsp<span id="white2">(condition1) &nbsp <span style="font-size:14pt;">||</span> &nbsp (condition2)</span>
   <span id="medium-bracket">&nbsp {</span>
   <br>
@@ -228,7 +235,7 @@
   <span id="medium-bracket">&nbsp }</span>
 </div>
 
-<div id="codeblock3"  onmouseover="showYourCode()"onclick="showCode3()" ondblclick="hideCode3()">
+<div id="codeblock3" onclick="showCode3()" ondblclick="hideCode3()">
     <span id="else-if1">if &nbsp</span>
     <span id="white3"> (condition1) &nbsp <span style="font-size:14pt;">||</span> &nbsp (condition2)</span>
     <span id="medium-bracket">&nbsp {</span>
@@ -251,8 +258,8 @@
 </div>  -->
 
 
-<div id="please-work" onclick="closeWork()">
-  <a id="close-box" href="">X</a>
+<div id="please-work" onclick="closeWork()" onmouseleave="closeWork()">
+  <div id="close-box" href="">X</div>
   <br>
     If the user forgets to include "true" in their "While" statement, the video shows the team getting "lost in transition", as  
     the opposing team races down the court on a fast break, and dunks on their basket.  The video then shows a slow motion recap,
@@ -262,8 +269,8 @@
     Second Commentator: "Yeah; it's like they forgot how to play defense."
 </div>
 
-<div id="work-again">
-  <a id="close-box" href="">X</a>
+<div id="work-again"onclick="closeAgain()" onmouseleave=closeAgain()>
+  <div id="close-box" href="">X</div>
   <br>
   There are a number of aspects in this coding challenge that might be difficult for users:<br><br>
   &#x25cf; There is a lot of syntax involved in this challenge.
@@ -276,8 +283,8 @@
 
 </div>
 
-<div id="keep-working" onclick="closeKeep()">
-    <a id="close-box" href="">X</a>
+<div id="keep-working" onclick="closeKeep()" onmouseleave="closeKeep()">
+  <div id="close-box" href="">X</div>
   <br>
   I am interested in exploring ways to make this adaptive:&nbsp where the user's performance and use of supports in previous 
   activites, determines which version of the activity they engage in for the next challenge (leveled challenges currently under devlopement).
