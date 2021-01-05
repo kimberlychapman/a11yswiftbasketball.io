@@ -42,7 +42,7 @@ function hideTrue(){
 }
 
 function showCode2(){
-  document.getElementById('white2').innerHTML="isOpen";
+  document.getElementById('white2').innerHTML="isBlocked";
   document.getElementById('hidden2').style.color="#eee";
 }
 
@@ -52,18 +52,20 @@ function hideCode2(){
 }
 
 function showCode3(){
-document.getElementById('white3').innerHTML="! isOpen";
+document.getElementById('else-if1').style.color="dodgerblue";
+document.getElementById('white3').innerHTML="&nbsp isOpen";
 document.getElementById('hidden3').style.color="#eee";
 }
 
 function hideCode3(){
+document.getElementById('else-if1').style.color="transparent";
 document.getElementById('white3').innerHTML="(condition)";
 document.getElementById('hidden3').style.color="transparent";
 }
 
 function showCode4(){
   document.getElementById('else-if2').style.color="dodgerblue";
-  document.getElementById('shot1').innerHTML="isBlocked"
+  document.getElementById('shot1').innerHTML="is ! isOpen"
   // document.getElementById('hidden-bracket3').style.color="#eee";
   document.getElementById('shot2').style.color="#eee";
   // document.getElementById('hidden-bracket4').style.color="#eee";
@@ -76,25 +78,52 @@ function hideCode4(){
   document.getElementById('shot2').style.color="transparent";
   // document.getElementById('hidden-bracket4').style.color="transparent";
 }
+
+
+function showCode5(){
+  document.getElementById('cover5').style.color="dodgerblue";
+  document.getElementById('shoot').innerHTML=" isInPositionToScore"
+  // document.getElementById('hidden-bracket3').style.color="#eee";
+  document.getElementById('score').style.color="#eee";
+  // document.getElementById('hidden-bracket4').style.color="#eee";
+}
+
+function hideCode5(){
+  document.getElementById('cover5').style.color="transparent";
+  document.getElementById('shoot').innerHTML="(condition)"
+  // document.getElementById('hidden-bracket3').style.color="transparent";
+  document.getElementById('score').style.color="transparent";
+  // document.getElementById('hidden-bracket4').style.color="transparent";
+}
 function showWork(){
 document.getElementById('keep-working').style.display="none";
 //   document.getElementById('still-working').style.display="none";
 document.getElementById('work-again').style.display="none";
 document.getElementById('task').style.display="none";
 document.getElementById('task2').style.display="none";
-document.getElementById('task3').style.display="none";
+// document.getElementById('task3').style.display="none";
 
 document.getElementById('please-work').style.display="block";
 document.getElementById('blue1').style.backgroundColor="yellow";
+document.getElementById('blue1').style.color="black";
+document.getElementById('while-loop').style.backgroundColor="yellow";
+document.getElementById('while-loop').style.color="black";
 document.getElementById('bracket1').style.backgroundColor="yellow";
 document.getElementById('bracket1').style.color="black";
+document.getElementById('true-thing').style.backgroundColor="yellow";
+document.getElementById('true-thing').style.color="black";
 }
 
 function hideWork(){
-
-document.getElementById('blue1').style.backgroundColor="transparent";
+document.getElementById('while-loop').style.backgroundColor="transparent";
+document.getElementById('while-loop').style.color="#eee";
+document.getElementById('true-thing').style.color="dodgerblue";
+document.getElementById('true-thing').style.backgroundColor="transparent";
 document.getElementById('bracket1').style.backgroundColor="transparent";
 document.getElementById('bracket1').style.color="#eee";
+document.getElementById('blue1').style.backgroundColor="transparent";
+document.getElementById('blue1').style.color="dodgerblue";
+
 }
 
 
@@ -112,70 +141,123 @@ document.getElementById('please-work').style.display="none";
 //   document.getElementById('still-working').style.display="none";
 document.getElementById('task').style.display="none";
 document.getElementById('task2').style.display="none";
-document.getElementById('task3').style.display="none";
+// document.getElementById('task3').style.display="none";
 
 document.getElementById('work-again').style.display="block";
 document.getElementById('blue2').style.backgroundColor="yellow";
+document.getElementById('blue2').style.color="black";
 document.getElementById('bracket3').style.backgroundColor="yellow";
 document.getElementById('bracket3').style.color="black";
 document.getElementById('bracket4').style.backgroundColor="yellow";
 document.getElementById('bracket4').style.color="black";
 document.getElementById('if-statement').style.backgroundColor="yellow";
 document.getElementById('if-statement').style.color="black";
-document.getElementById('if-statement2').style.backgroundColor="yellow";
-document.getElementById('if-statement2').style.color="black";
+// document.getElementById('if-statement2').style.backgroundColor="yellow";
+// document.getElementById('if-statement2').style.color="black";
 document.getElementById('or1').style.backgroundColor="yellow";
 document.getElementById('or1').style.color="black";
+document.getElementById('or2').style.backgroundColor="yellow";
+document.getElementById('or2').style.color="black";
+document.getElementById('blue3').style.backgroundColor="yellow";
+document.getElementById('blue3').style.color="black";
+document.getElementById('else3').style.backgroundColor="yellow";
+document.getElementById('else3').style.color="black";
+document.getElementById('bracket6').style.backgroundColor="yellow";
+document.getElementById('bracket6').style.color="black";
+document.getElementById('bracket7').style.backgroundColor="yellow";
+document.getElementById('bracket7').style.color="black";
 }
 
 function hideAgain(){
-
+document.getElementById('work-again').style.display="block";
 document.getElementById('blue2').style.backgroundColor="transparent";
+document.getElementById('blue2').style.color="dodgerblue";
 document.getElementById('bracket3').style.backgroundColor="transparent";
 document.getElementById('bracket3').style.color="#eee";
 document.getElementById('bracket4').style.backgroundColor="transparent";
 document.getElementById('bracket4').style.color="#eee";
 document.getElementById('if-statement').style.backgroundColor="transparent";
 document.getElementById('if-statement').style.color="#eee";
-document.getElementById('if-statement2').style.backgroundColor="transparent";
-document.getElementById('if-statement2').style.color="#eee";
+// document.getElementById('if-statement2').style.backgroundColor="transparent";
+// document.getElementById('if-statement2').style.color="#eee";
 document.getElementById('or1').style.backgroundColor="transparent";
 document.getElementById('or1').style.color="#eee";
+document.getElementById('or2').style.backgroundColor="transparent";
+document.getElementById('or2').style.color="#eee";
+document.getElementById('blue3').style.backgroundColor="transparent";
+document.getElementById('blue3').style.color="dodgerblue";
+  document.getElementById('else3').style.backgroundColor="transparent";
+document.getElementById('else3').style.color="#eee";
+document.getElementById('bracket6').style.backgroundColor="transparent";
+document.getElementById('bracket6').style.color="#eee";
+document.getElementById('bracket7').style.backgroundColor="transparent";
+document.getElementById('bracket7').style.color="#eee";
+
 }
 
-// function showKeep(){
-//   document.getElementById('work-again').style.display="none";
-//   document.getElementById('still-working').style.display="none";
-//   document.getElementById('please-work').style.display="none";
-//   document.getElementById('task').style.display="none";
+function closeAgain(){
+  document.getElementById('work-again').style.display="none";
+}
+function showKeep(){
+  document.getElementById('work-again').style.display="none";
+  // document.getElementById('still-working').style.display="none";
+  document.getElementById('please-work').style.display="none";
+  document.getElementById('task').style.display="none";
 
-//   document.getElementById('keep-working').style.display="block";
-//   document.getElementById('blue3').style.backgroundColor="yellow";
-//   document.getElementById('else-if').style.backgroundColor="yellow";
-//   document.getElementById('else2').style.backgroundColor="yellow";
-//   document.getElementById('else-if').style.color="black";
-//   document.getElementById('else2').style.color="black";
-//   document.getElementById('bracket5').style.backgroundColor="yellow";
-//   document.getElementById('bracket5').style.color="black";
-//   document.getElementById('bracket6').style.backgroundColor="yellow";
-//   document.getElementById('bracket6').style.color="black";
-// }
+  document.getElementById('keep-working').style.display="block";
+  document.getElementById('else-else').style.backgroundColor="yellow";
+  document.getElementById('else-else').style.color="black";
+  document.getElementById('this-thing').style.backgroundColor="yellow";
+  document.getElementById('this-thing').style.color="black";
+  document.getElementById('brack-brack').style.backgroundColor="yellow";
+  document.getElementById('brack-brack').style.color="black";
+  document.getElementById('do-this').style.backgroundColor="yellow";
+  document.getElementById('do-this').style.color="black";
+  document.getElementById('brackety-brack').style.backgroundColor="yellow";
+  document.getElementById('brackety-brack').style.color="black";
+  document.getElementById('last-else').style.backgroundColor="yellow";
+  document.getElementById('last-else').style.color="black";
+  document.getElementById('that-thing').style.backgroundColor="yellow";
+  document.getElementById('that-thing').style.color="black";
+  document.getElementById('brick-brack').style.backgroundColor="yellow";
+  document.getElementById('brick-brack').style.color="black";
+  document.getElementById('do-that').style.backgroundColor="yellow";
+  document.getElementById('do-that').style.color="black";
+  document.getElementById('brickity-brack').style.backgroundColor="yellow";
+  document.getElementById('brickity-brack').style.color="black";
+  document.getElementById('bracket8').style.color="black";
+  document.getElementById('bracket8').style.backgroundColor="yellow";
+}
 
-// function hideKeep(){
-//   document.getElementById('keep-working').style.display="block";
-//   document.getElementById('blue3').style.backgroundColor="transparent";
-//   document.getElementById('else-if').style.backgroundColor="transparent";
-//   document.getElementById('else2').style.backgroundColor="transparent";
-//   document.getElementById('else-if').style.color="#eee";
-//   document.getElementById('else2').style.color="#eee";
-//   document.getElementById('bracket5').style.backgroundColor="transparent";
-//   document.getElementById('bracket5').style.color="#eee";
-//   document.getElementById('bracket6').style.backgroundColor="transparent";
-//   document.getElementById('bracket6').style.color="#eee";
-// }
-// function closeKeep(){
-//   document.getElementById('keep-working').style.display="none";
-// }
+function hideKeep(){
+  document.getElementById('keep-working').style.display="block";
+  document.getElementById('else-else').style.backgroundColor="transparent";
+  document.getElementById('else-else').style.color="dodgerblue";
+  document.getElementById('this-thing').style.backgroundColor="transparent";
+  document.getElementById('this-thing').style.color="#eee";
+  document.getElementById('brack-brack').style.backgroundColor="transparent";
+  document.getElementById('brack-brack').style.color="#eee";
+  document.getElementById('do-this').style.backgroundColor="transparent";
+  document.getElementById('do-this').style.color="#eee";
+  document.getElementById('brackety-brack').style.backgroundColor="transparent";
+  document.getElementById('brackety-brack').style.color="#eee";
+  document.getElementById('last-else').style.backgroundColor="transparent";
+  document.getElementById('last-else').style.color="dodgerblue";
+  document.getElementById('that-thing').style.backgroundColor="transparent";
+  document.getElementById('that-thing').style.color="#eee";
+  document.getElementById('brick-brack').style.backgroundColor="transparent";
+  document.getElementById('brick-brack').style.color="#eee";
+  document.getElementById('do-that').style.backgroundColor="transparent";
+  document.getElementById('do-that').style.color="#eee";
+  document.getElementById('brickity-brack').style.backgroundColor="transparent";
+  document.getElementById('brickity-brack').style.color="#eee";
+  document.getElementById('bracket8').style.backgroundColor="transparent";
+  document.getElementById('bracket8').style.color="#eee";
+}
+
+function closeKeep(){
+  document.getElementById('keep-working').style.display="none";
+}
 
 // function showStill(){
 //   document.getElementById('still-working').style.display="block";
@@ -186,85 +268,101 @@ document.getElementById('please-work').style.display="none";
 document.getElementById('work-again').style.display="none";
 document.getElementById('task').style.display="none";
 document.getElementById('task2').style.display="none";
-document.getElementById('task3').style.display="none";
+// document.getElementById('task3').style.display="none";
 //   document.getElementById('still-working').style.display="block";
 
 document.getElementById('keep-working').style.display="block";
-document.getElementById('blue3').style.backgroundColor="yellow";
-document.getElementById('or2').style.backgroundColor="yellow";
-document.getElementById('or2').style.color="black";
-document.getElementById('or3').style.backgroundColor="yellow";
-document.getElementById('or3').style.color="black";
-document.getElementById('else3').style.backgroundColor="yellow";
-document.getElementById('else3').style.color="black";
-document.getElementById('bracket6').style.backgroundColor="yellow";
-document.getElementById('bracket6').style.color="black";
-document.getElementById('bracket7').style.backgroundColor="yellow";
-document.getElementById('bracket7').style.color="black";
-document.getElementById('bracket8').style.backgroundColor="yellow";
-document.getElementById('bracket8').style.color="black";;
+
+
+// document.getElementById('or3').style.backgroundColor="yellow";
+// document.getElementById('or3').style.color="black";
+
+// document.getElementById('bracket8').style.backgroundColor="yellow";
+// document.getElementById('bracket8').style.color="black";
 }
 
 // function hideStill(){
 //   document.getElementById('still-working').style.display="none";
 // }
 function hideSpans(){
-document.getElementById('blue3').style.backgroundColor="transparent";
-document.getElementById('or2').style.backgroundColor="transparent";
-document.getElementById('or2').style.color="#eee";
-document.getElementById('or3').style.backgroundColor="transparent";
-document.getElementById('or3').style.color="#eee";
-document.getElementById('else3').style.backgroundColor="transparent";
-document.getElementById('else3').style.color="#eee";
-document.getElementById('bracket6').style.backgroundColor="transparent";
-document.getElementById('bracket6').style.color="#eee";
-document.getElementById('bracket7').style.backgroundColor="transparent";
-document.getElementById('bracket7').style.color="#eee";
-document.getElementById('bracket8').style.backgroundColor="transparent";
-document.getElementById('bracket8').style.color="#eee";
+
+
+// document.getElementById('or3').style.backgroundColor="transparent";
+// document.getElementById('or3').style.color="#eee";
+
+// document.getElementById('bracket8').style.backgroundColor="transparent";
+// document.getElementById('bracket8').style.color="#eee";
 }
 
 function showTask(){
 document.getElementById('task').style.display="block";
 document.getElementById('task2').style.display="block";
-document.getElementById('task3').style.display="block";
+document.getElementById('the-drop').src="img/up-arrow.png";
+// document.getElementById('task3').style.display="block";
 //   document.getElementById('still-working').style.display="none";
-document.getElementById('keep-working').style.display="none";
-document.getElementById('please-work').style.display="none";
-document.getElementById('work-again').style.display="none";
+// document.getElementById('keep-working').style.display="none";
+// document.getElementById('please-work').style.display="none";
+// document.getElementById('work-again').style.display="none";
 }
 
 function hideTask(){
 document.getElementById('task').style.display="none";
 document.getElementById('task2').style.display="none";
-document.getElementById('task3').style.display="none";
+document.getElementById('the-drop').src="img/drop-down-arrow.png";
+// document.getElementById('task3').style.display="none";
 }
 
 function showYourCode(){
 
 document.getElementById('task').style.display="none";
 document.getElementById('task2').style.display="none";
-document.getElementById('task3').style.display="none";
+// document.getElementById('task3').style.display="none";
 document.getElementById('keep-working').style.display="none";
 document.getElementById('please-work').style.display="none";
 document.getElementById('work-again').style.display="none";
-//   document.getElementById('still-working').style.display="none";
+  // document.getElementById('still-working').style.display="none";
 
+document.getElementById('the-dropdown').src="img/up-arrow.png"
 document.getElementById('write-code').style.display="block";
-// document.getElementById('see-codes').style.display="block";
+document.getElementById('codeblock0').style.display="block";
 document.getElementById('codeblock1').style.display="block";
 document.getElementById('codeblock2').style.display="block";
 document.getElementById('codeblock3').style.display="block";
-// document.getElementById('codeblock4').style.display="block";
+document.getElementById('codeblock4').style.display="block";
+document.getElementById('codeblock5').style.display="block";
+document.getElementById('screen-algorithm').style.display="block";
 }
 
 function closeTaskPanel(){
+document.getElementById('the-dropdown').src="img/drop-down-arrow.png"
 document.getElementById('write-code').style.display="none";
 // document.getElementById('see-codes').style.display="none";
+document.getElementById('codeblock0').style.display="none";
 document.getElementById('codeblock1').style.display="none";
 document.getElementById('codeblock2').style.display="none";
 document.getElementById('codeblock3').style.display="none";
-// document.getElementById('codeblock4').style.display="none";
+document.getElementById('codeblock4').style.display="none";
+document.getElementById('codeblock5').style.display="none";
+document.getElementById('screen-algorithm').style.display="none";
+}
+
+function hidePart2(){
+  document.getElementById('finish1').style.display="none";
+  document.getElementById('codeblock0').style.display="none";
+  document.getElementById('codeblock1').style.display="none";
+  document.getElementById('codeblock2').style.display="none";
+  document.getElementById('codeblock3').style.display="none";
+  document.getElementById('codeblock4').style.display="none";
+  document.getElementById('codeblock5').style.display="none";
+}
+function showPart2(){
+  document.getElementById('finish1').style.display="block";
+  document.getElementById('codeblock0').style.display="block";
+  document.getElementById('codeblock1').style.display="block";
+  document.getElementById('codeblock2').style.display="block";
+  document.getElementById('codeblock3').style.display="block";
+  document.getElementById('codeblock4').style.display="block";
+  document.getElementById('codeblock5').style.display="block";
 }
 
 function closeDetails(){
@@ -272,6 +370,54 @@ document.getElementById('keep-working').style.display="none";
 document.getElementById('please-work').style.display="none";
 document.getElementById('work-again').style.display="none";
 //   document.getElementById('still-working').style.display="none";
+}
+
+function showTake1(){
+  document.getElementById('signal1').style.color="#eee";
+  document.getElementById('signal1').innerHTML="signalPlayer";
+  document.getElementById('signal1').style.fontSize="16pt";
+}
+
+function hideTake1(){
+  document.getElementById('signal1').style.color="transparent";
+  document.getElementById('signal1').innerHTML="condition";
+  document.getElementById('signal1').style.fontSize="14pt";
+}
+
+function showTake2(){
+  document.getElementById('sprint2').style.color="#eee";
+  document.getElementById('sprint2').innerHTML="sprintToPlayer";
+  document.getElementById('sprint2').style.fontSize="16pt";
+}
+
+function hideTake2(){
+  document.getElementById('sprint2').style.color="transparent";
+  document.getElementById('sprint2').innerHTML="condition";
+  document.getElementById('sprint2').style.fontSize="14pt";
+}
+
+function showTake3(){
+  document.getElementById('stand3').style.color="#eee";
+  document.getElementById('stand3').innerHTML="standByDefender";
+  document.getElementById('stand3').style.fontSize="16pt";
+}
+
+function hideTake3(){
+  document.getElementById('stand3').style.color="transparent";
+  document.getElementById('stand3').innerHTML="condition";
+  document.getElementById('stand3').style.fontSize="14pt";
+}
+
+function showTake4(){
+  document.getElementById('stay4').style.color="#eee";
+  document.getElementById('stay4').innerHTML="stayStill";
+  document.getElementById('stay4').style.fontSize="16pt";
+}
+
+function hideTake4(){
+  document.getElementById('stay4').style.color="transparent";
+  document.getElementById('stay4').innerHTML="condition";
+  document.getElementById('stay4').style.fontSize="14pt";
 }
 
 
@@ -297,7 +443,7 @@ document.getElementById('work-again').style.display="none";
 //     document.getElementById('blue1').innerHTML="If the user forgets to enter \"While(true)\", the video shows the point guard dribbling the ball up the court, the point guard stalls, and the ball is stolen (turnover).  Then a commentator makes a comment such as, \"Wow, it is like [player name] forgot they were playing offense\".";
 //     document.getElementById('blue1').style.backgroundColor="yellow";
 //     document.getElementById('blue1').style.fontSize="12pt";
-  // document.getElementById('blue1').style.fontWeight="normal";
+//   document.getElementById('blue1').style.fontWeight="normal";
 //     document.getElementById('blue1').style.color="#2a2a2a";
 //     document.getElementById('bracket1').style.display="none";
 // }
@@ -307,7 +453,7 @@ document.getElementById('work-again').style.display="none";
 //     document.getElementById('bracket1').style.display="block";
 //     document.getElementById('blue1').style.backgroundColor="transparent";
 //     document.getElementById('blue1').style.color="dodgerblue";
-  // document.getElementById('bracket1').style.color="#eee";
+//   document.getElementById('bracket1').style.color="#eee";
 // }
 
 function showExecute(){
