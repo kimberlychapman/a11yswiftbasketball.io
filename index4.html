@@ -2,11 +2,11 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Swift2K</title>
+  <title>Swift 2K</title>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
   <!-- <link rel="stylesheet" href="./style3.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./style2.css">
+  <link rel="stylesheet" href="./style4.css">
   <link rel="stylesheet" href="ihover-gh-pages/dist/styles/main.css">
   <link href="http://fonts.googleapis.com/css?family=Lustria|Lato:300,400,700,400italic" rel="stylesheet" type="text/css">
   <!-- <script LEsrc="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -37,7 +37,7 @@
     $('ul').slideToggle(280);
   });
 </script>
-<script type="text/javascript" src="script2.js"></script>
+<script type="text/javascript" src="script4.js"></script>
 
 
 </head>
@@ -56,46 +56,62 @@
       <div class="title" onclick="showExecute()" ondblclick="hideExecute()">Run Code</div>
 
     <ul class="nav">
-      <li> 
-
-      <!-- <a id="test" onclick=countLoops() ondblclick=totalLoops()>var down=1</a> -->
-
+      <li>
+        <a id="test10">
+          <span id="while-loop">Offense = </span>
+          <span id="true-thing">&nbsp true</span>
+        </a>
         <a id="test0" onmouseover="showWork()" onmouseout="hideWork()">
             <span id ="blue1">While (true)</span>
             <span id="bracket1"> &nbsp{</span>
         </a> 
         <a id="test3" onmouseover="showAgain()" onmouseout="hideAgain()">
-            <span id="blue2" onmouseover="explainAction2()" onmouseout="hideAction2()">if &nbsp</span>
-            <br>
-            <span id="if-statement">yourSkills==theirSkills</span>
-        </a> 
-        <a id="test4">
-            <span id="if-statement2">|| strongShooter</span>
+            <span id="blue2">if &nbsp</span>
+            <span id="if-statement">isBlocked</span>
             <span id="bracket3">&nbsp {</span>
-        </a>
-        <a id="test6" onmouseover="showKeep()" onmouseout="hideKeep()">
-          <span id="or1">playPersonToPerson( )</span>
+        </a> 
+        <a id="test6" onmouseover="showAgain()" onmouseout="hideAgain()">
+          <span id="or1">setScreen( )</span>
           <br>
           <span id="bracket4">&nbsp }</span>
         </a> 
-
-        
-        <a id="test5"  onmouseover="showSpans()" onmouseout="hideSpans()">
-          <span id="blue3">if &nbsp</span>
-          <span id="or2">! strongShooter ||</span>
-        </a>
-        <a id="test7">
-          <span id="or3"> ! strongDefender</span>
-          <br>
+        <a id="test5" onmouseover="showAgain()" onmouseout="hideAgain()">
+          <span id="blue3">else if</span>
+          <span id="or2">&nbsp isOpen</span>
           <span id="bracket6">&nbsp {</span>
         </a>
         <a id="test8">
-          <span id="else3">playZone( )</span>
+          <span id="else3" onmouseover="showAgain()" onmouseout="hideAgain()">passTheBall( )</span>
           <span id="bracket7">&nbsp }</span>
+          <!-- <span id="bracket8">&nbsp }</span> -->
+        </a>
+        <a id="test7" onmouseover="showKeep()" onmouseout="hideKeep()">
+            <span id="else-else">else if</span>
+            <span id="this-thing">&nbsp ! isOpen</span>
+            <span id="brack-brack">&nbsp {</span>
+        </a>
+        <a id="test9" onmouseover="showKeep()" onmouseout="hideKeep()">
+            <span id="do-this">dribbleTheBall( )</span>
+            <span id="brackety-brack">&nbsp }</span>
+        </a>
+        <a id="test11" onmouseover="showKeep()" onmouseout="hideKeep()">
+          <span id="last-else">else if</span>
+        </a>
+        <a id="test12" onmouseover="showKeep()" onmouseout="hideKeep()">
+          <span id="that-thing">isInPositionToScore ( )</span>
+          <span id="brick-brack">&nbsp {</span>
+        </a>
+        <a id="test13" onmouseover="showKeep()" onmouseout="hideKeep()">
+          <span id="do-that">takeTheShot( )</span>
+          <span id="brickity-brack">&nbsp }</span>
           <span id="bracket8">&nbsp }</span>
         </a>
-        <a id="test9"></a>
+        
+      
+      </li>
 
+    </ul>
+  </div>
         <!-- <a id="test11">
           <span id="else4">takeTheShot( )</span>
           <span id="bracket8">&nbsp }</span>
@@ -109,11 +125,7 @@
         <a id="test7">else if ! receiverOpen &&<br> ! runningBackOpen<span id="emphasis3"> &nbsp {</span></a>
         <a id="test8">qbScramble( ) &nbsp <span id="emphasis3"> }</span></a>
         <a id="test9">down +=1 &nbsp<span id="emphasis2"> }</span></a> -->
-         
-      </li>
-
-    </ul>
-  </div>
+   
   <div class="content content-is-open">
     <span class='side-panel-toggle' onclick="closeDetails()">
       <i class="fa fa-bars" style="color:white;"></i>
@@ -122,59 +134,81 @@
     <hr>
   </div>
 </div>
-<div class="ih-item square colored effect7"><a href="#">
-    <div class="img"><img src="img/m2m.jpg" alt="img"></div>
-    <!-- <div id="defense-img"><img src="img/m2m.jpg"></div> -->
-    <div class="info">
-      <h3 id="d-type">Person-to-Person</h3>
-      <p id="defense">Defense</p>
-    </div></a> 
-</div>
 
-<div class="ih-item square effect7"><a href="#">
-  <div class="img"><img src="img/zone.jpg" alt="img"></div>
-  <!-- <div id="defense-img"><img src="img/zone.jpg"></div> -->
+<!-- <div class="ih-item square colored effect13 top_to_bottom"><a href="#">
+  <div class="img"><img src="img/ideal_screen.png" alt="img"></div>
   <div class="info">
-    <h3 id="d-type">Zone</h3>
-    <p id="defense">Defense</p>
-  </div></a> 
+    <h3>Setting a Screen</h3>
+    <p>Blocking a defender to free up your teammate.</p>
+  </div></a>
+</div> -->
+
+
+
+<div class="ih-item square colored effect12 right_to_left"><a href="#">
+    <div class="img"><img src="img/personal.png" alt="img"></div>
+    <div class="info">
+      <h3>Personal Foul</h3>
+    </div></a>
 </div>
 
-
+<div class="ih-item square colored effect12 left_to_right"><a href="#">
+    <div class="img"><img src="img/flagrant.png" alt="img"></div>
+    <div class="info">
+      <h3>Flagrant 2 Foul</h3>
+      <!-- <p>Description goes here</p> -->
+    </div></a>
+</div>
 
 <div id="execute">Executing their Code</div>
 <div id="pg" onclick="showTask()">
-  <div id="play-pg">Defense</div>
+  <div id="play-pg">Player Fouls</div>
   <img id="the-drop" src="img/drop-down-arrow.png">
 </div>
-</div>
-<div id ="task">
+<div id ="task" onclick="hideTask()">
+  <div id="close-box">X</div><br>
+  You have written offensive plays for when players should pass,  dribble,  or take a shot.  
+  But what does a team do when none of these three things are possible?  One way that teams 
+  solve this problem is by <span style="font-weight:bold;color:dodgerblue;">Setting a Screen</span>.
   <br>
-    Just like how there are many different ways to go about scoring (Offense), there are many different ways to go about preventing the other team from scoring (Defense).<br><br>
-    Two common Defensive Strategies are:
-    <br>
-    <br>
-    1. Person-to-Person Defense
-    <br>
-    <br>
-    2. Zone Defense
+  <br>
+  <span style="font-weight:bold; color:dodgerblue;">Setting a Screen</span> is when an offensive player stands 
+  in the way of a defender who is guarding their teammate.  By standing there, they block the 
+  defender from guarding their teammate— freeing up their teammate to pass or score.  There are 
+  <span style="font-weight:bold;color:dodgerblue;">4 steps </span>to Setting a Screen: &nbsp <span style="font-weight:bold;color:dodgerblue;">
+  signalPlayer( ), sprintToPlayer( ), standByDefender( ), stayStill( )</span>.
+  
 </div>
 <div id="task2">
-  Person-to-Person is the most common Defense.  In Person-to-Person Defense, each player is 
-  matched with a player on the opposing team— and they guard that person the entire time.
-  <br><br>
-  A team will play Person-to-Person <span style="color:dodgerblue; font-weight:bold; font-size:12pt;">if:</span>
-  <br>
-  &#x25cf; Each player on your team matches up with a player on the opposing team.
-  <br>
-  <br>
-  &#x25cf; In other words, their<br> <span style="color:black;font-weight:bold; background-color:yellow;">skills are equal </span>.
-  <br>
-  <br>
-  &#x25cf; <span style="color:black;font-weight:bold; background-color:yellow;">OR</span> the other team has a <span style="color:black;font-weight:bold; background-color:yellow;">really strong offensive player</span>.
-</div>
-<div id="task3">
-<div id="close-box" onclick="hideTask()">X</div><br>
+  <div id="step1">
+    <img id="signal" src="img/signal.png">
+    <span id="signal-steps">
+      <span style="font-weight:bold; color:dodgerblue;">Step 1 signaPlayerl( )</span> 
+      : Signal your teammate that you are going to set a screen for them; signal quickly so that the opposing team doesn't have time to stop you.
+    </span>
+  </div>
+  <div id="step2">
+    <img id="sprint" src="img/sprint.png">
+    <span id="sprint-steps">
+      <span style="font-weight:bold; color:dodgerblue;">Step 2 sprintToPlayer( ):</span>
+      Sprint to your teammate to set the screen.
+    <br>
+    <br>
+    <span style="font-weight:bold; color:dodgerblue;">Step 3 standByDefender( ):</span> Stop and stand beside or behind defender to block them from guarding your teammate.
+    
+  </div>
+  <div id="step3">
+    <img id="stand" src="img/stand.png">
+    <span id="stand-steps">
+      <span style="font-weight:bold; color:dodgerblue;">Step 4 stayStill( ):</span>
+      Set your feet and use your arms to protect your body (remember: your feet must stay planted, and you can't use your arms to block the defender).  
+      Once you've made contact with the defender you can move again.
+    </span>
+  </div>
+  
+</div> 
+<!-- <div id="task3">
+
   In a Zone Defense, each player guards a specific area; they guard anyone who comes into their space: making sure that no one who enters their space scores.
   <br><br>
   A team will play a Zone <span style="color:dodgerblue; font-weight:bold; font-size:12pt;">if:</span>
@@ -184,24 +218,68 @@
   <br>
   <br>
   &#x25cf; <span style="color:black;font-weight:bold; background-color:yellow;">OR </span>there is a player (or two) on your team that is <span style="color:black;font-weight:bold; background-color:yellow;">not a strong defender</span> (so a zone allows a strong defender in the area next to theirs to help them).
-</div>
+</div> -->
 
-
-<div class="your-code"onclick="showYourCode()">
-  <div id="your-code-title" >Your Task</div>
-  <img id="the-dropdown" src="img/drop-down-arrow.png">
+<div id="part1" onclick="hidePart2()" ondblclick="showPart2()">
+  <img id="bball1" src="img/nba.jpg">
 </div>
-<div id="write-code"onclick="closeTaskPanel()">
+<div id="screen-algorithm">
+    <div id="take1" onclick="showTake1()" ondblclick="hideTake1()"><br>
+      <span style="color:dodgerblue; font-weight: bold;">func </span><span id="standard">setScreen ( ) &nbsp </span>
+      <span id="big-bracket">{</span>
+      <br>
+      <br>
+      <span id="signal-screen"><span id="signal1">condition</span>&nbsp( )</span>
+    </div>
+    <br>
+    <br>
+    <div id="take2" onclick="showTake2()" ondblclick="hideTake2()">
+      <span id="sprint-screen"><span id="sprint2">condition</span>&nbsp( )</span>
+    </div>
+    <br>
+    <br>
+    <div id="take3" onclick="showTake3()" ondblclick="hideTake3()">
+      <span id="stand-screen"><span id="stand3">condition</span>&nbsp( )</span>
+    </div>
+    <br>
+    <br>
+    <div id="take4" onclick="showTake4()" ondblclick="hideTake4()">
+      <span id="stay-screen"><span id="stay4">condition</span>&nbsp( )</span>
+    </div>
+    <br>
+    <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
+</div>
+ <div class="your-code"onclick="showYourCode()">
+  <div id="your-code-title">Your Task</div>
+  <img id="the-dropdown" src="img/drop-down-arrow.png" >
+</div>
+  <div id="write-code"onclick="closeTaskPanel()">
   <div id="close-box">X</div><br>
-    Since these are strategies that teams use on Defense, <br><span id="notice-me">Defense = true</span>.  
-    That means that a team only uses these strategies <span id="notice-me">While </span> they are on <span id="notice-me">Defense</span>.<br><br>
-    When <span id="notice-me">Defense = false</span>,&nbsp that means they are on Offense.<br><br><span id="notice-me2">For Your Defensive Strategies Code:</span>
+     <br>
+     There are <span style="font-weight:bold;color:dodgerblue;">2 Parts to this Challenge:</span>
     <br>
-    &#x25cf; Modify the While statement to show that this code is followed While Defense is true.
     <br>
-    &#x25cf; Complete the first "if" statement, and add an additional "if" statement, to help the team figure out when they should use each defensive strategy: 
-    Person-to-Person and Zone.</span>
+    First, you will write an Algorithm for <span style="font-weight:bold; color:dodgerblue;">Setting a Screen</span>.
+    Your algorithm needs to include:
     <br>
+    <br>
+    1. When (the <span style="font-weight:bold;">condition</span>) you would use a Screen.
+    <br>
+    2. The steps (<span style="font-weight:bold;">functions</span>) of Setting a Screen.
+    <br>
+    <br>
+    <div id="finish1">
+      Then, you will write your code:
+      <br>
+      <br>
+      1. Write your while statement: when would you use this function—Offense or Defense?
+      <br>
+      2. Use "if" and "else if" statments, and your Logical Operators, to have the team 
+      carry out actions under different conditions: isOpen,<br> ! isOpen, isBlocked, 
+      isInPositionToScore</span>
+    </div>
+    
+    <!-- <br>
     You will use these variables when writing your code:
     <br>
     <br>
@@ -214,78 +292,74 @@
     var <span style="color:dodgerblue; font-weight: bold;">strongShooter</span> = a very strong Offensive Player.
     <br>
     <br>
-    var <span style="color:dodgerblue; font-weight: bold;">strongDefender</span> = a very strong Defensive Player.
+    var <span style="color:dodgerblue; font-weight: bold;">strongDefender</span> = a very strong Defensive Player. -->
 </div>
 <!-- <div id="see-codes" onmouseover="showYourCode()">The user would enter their code in this panel— with the support of a bank of code blocks at the bottom and predictive text— but for Demo Purposes: click on the white lines to show each code block & double click the white lines to reset them.</div> -->
-<div id="codeblock1"  onclick="showTrue()" ondblclick="hideTrue()">
-  While<span id="white">(</span>
+<div id="codeblock0" onclick="showWhile()" ondblclick="hideWhile()"><span id="offense">Offense </span>= <span id="true">true</span></div>
+<div id="codeblock1" onclick="showTrue()" ondblclick="hideTrue()">
+  While <span id="white">(</span>
   <span id="hidden">true</span>
   <span id="white">)</span>
   <span id="big-bracket">&nbsp {</span>
 </div>
-
-<div id="codeblock2"  onclick="showCode2()" ondblclick="hideCode2()">
-  if &nbsp<span id="white2">(condition1) &nbsp <span style="font-size:14pt;">||</span> &nbsp (condition2)</span>
+<div id="codeblock2" onclick="showCode2()" ondblclick="hideCode2()">
+  if &nbsp <span id="white2">(condition)</span>
   <span id="medium-bracket">&nbsp {</span>
   <br>
-  <span id="hidden2">playPersonToPerson( )</span>
+  <span id="hidden2">setScreen( )</span>
   <br>
   <span id="medium-bracket">&nbsp }</span>
 </div>
 
-<div id="codeblock3" onclick="showCode3()" ondblclick="hideCode3()">
-    <span id="else-if1">if &nbsp</span>
-    <span id="white3"> (condition1) &nbsp <span style="font-size:14pt;">||</span> &nbsp (condition2)</span>
+<div id="codeblock3"  onclick="showCode3()" ondblclick="hideCode3()">
+    <span id="else-if1">else if</span>
+    <span id="white3"> (condition)</span>
     <span id="medium-bracket">&nbsp {</span>
       <br>
-      <span id="hidden3">playZone( )</span>
+      <span id="hidden3">passTheBall( )</span>
       <br>
       <span id="medium-bracket">&nbsp }</span>
       <br>
-      <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
+      <!-- <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span> -->
 </div>
-<!-- <div id="codeblock4" onmouseover="showYourCode()" onclick="showCode4()" ondblclick="hideCode4()">
+<div id="codeblock4" onclick="showCode4()" ondblclick="hideCode4()">
     <span id="else-if2">else if &nbsp</span>
-    <span id="shot1"> inPositionToScore</span>
-    <span id="hidden-bracket3">&nbsp {</span>
+    <span id="shot1">(condition)</span>
+    <span id="medium-bracket"> {</span>
     <br>
-    <span id="shot2">takeTheShot( )</span>
+    <span id="shot2">dribbleTheBall( )</span>
     <br>
-    <span id="hidden-bracket4">&nbsp }</span><br>
-    <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
-</div>  -->
+    <span id="medium-bracket">&nbsp }</span><br>
 
+</div> 
+<div id="codeblock5" onclick="showCode5()" ondblclick="hideCode5()">
+  <span id="cover5">else if &nbsp</span>
+  <span id="shoot">(condition)</span>
+  <span id="medium-bracket"> {</span>
+  <br>
+  <span id="score">takeTheShot( )</span>
+  <br>
+  <span id="medium-bracket">&nbsp }</span><br>
+  <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
+</div>
 
 <div id="please-work" onclick="closeWork()" onmouseleave="closeWork()">
   <div id="close-box">X</div>
   <br>
-    If the user forgets to include "true" in their "While" statement, the video shows the team getting "lost in transition", as  
-    the opposing team races down the court on a fast break, and dunks on their basket.  The video then shows a slow motion recap,
-    and the commentators have the following dialogue:<br><br> 
-    First Commentator: "Looking at this transition; I don't see a single defender."
-    <br><br>
-    Second Commentator: "Yeah; it's like they forgot how to play defense."
+Coming Soon!  I need to eat dinner.
 </div>
 
 <div id="work-again" onclick="closeAgain()" onmouseleave="closeAgain()">
   <div id="close-box">X</div>
   <br>
-  There are a number of aspects in this coding challenge that might be difficult for users:<br><br>
-  &#x25cf; There is a lot of syntax involved in this challenge.
-  <br> 
-  &#x25cf; It involves three different logical operators: ! Logical NOT Operator, || Logical OR Operator, and == Equality Operator.
-  <br>
-  &#x25cf; The content is complex; users might have errors that are not really programming errors, but errors related to the content (ex. mixing up when a team would play a zone vs. person-to-person defense).
-  <br><br>
-  I do think this is a "good" challenge— it forces the user to really attend to detail.  But there are a number of ways that this challenge could be modified/leveled.
+  Coming Soon!  I need to eat dinner.
 
 </div>
 
 <div id="keep-working" onclick="closeKeep()" onmouseleave="closeKeep()">
   <div id="close-box">X</div>
   <br>
-  I am interested in exploring ways to make this adaptive:&nbsp where the user's performance and use of supports in previous 
-  activites, determines which version of the activity they engage in for the next challenge (leveled challenges currently under devlopement).
+  Coming Soon!  I need to eat dinner.
 </div>
 
 <!-- <div id="still-working" onclick="hideStill()">
@@ -333,7 +407,7 @@
 </div> -->
 
 
-  <a id="back" href= "index.html"><img id="rewind" src="img/rewind.png"></a>
+  <a id="back" href= "index2.html"><img id="rewind" src="img/rewind.png"></a>
   <a id="next" href= "index3.html"><img id="forward" src="img/fast-forward.png"></a>
 
 
@@ -359,7 +433,7 @@
       src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
   </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script  src="./script2.js"></script>
+<script  src="./script4.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 
