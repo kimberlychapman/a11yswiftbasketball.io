@@ -165,29 +165,31 @@
   <div id="play-pg">Player Fouls</div>
   <img id="the-drop" src="img/drop-down-arrow.png">
 </div>
-<div id ="task" onclick="hideTask()">
-  <div id="close-box">X</div><br>
-  You have written offensive plays for when players should pass,  dribble,  or take a shot.  
-  But what does a team do when none of these three things are possible?  One way that teams 
-  solve this problem is by <span style="font-weight:bold;color:dodgerblue;">Setting a Screen</span>.
+<div id ="task">
+  <div id="close-box" onclick="hideTask()">X</div><br>
+ <span id="foul-intro"><span style="font-weight: bold;">Player fouls</span> are when a player makes contact with another player in a way that breaks the rules.  
+     <br>
+    This challenge focuses on two types of Player Fouls:
+</span>
   <br>
   <br>
-  <span style="font-weight:bold; color:dodgerblue;">Setting a Screen</span> is when an offensive player stands 
+<button id="personal-btn" onclick="showPersonal()" ondblclick="hidePersonal()">Personal Foul</button>
+  <!-- <span style="font-weight:bold; color:dodgerblue;">Setting a Screen</span> is when an offensive player stands 
   in the way of a defender who is guarding their teammate.  By standing there, they block the 
   defender from guarding their teammate— freeing up their teammate to pass or score.  There are 
   <span style="font-weight:bold;color:dodgerblue;">4 steps </span>to Setting a Screen: &nbsp <span style="font-weight:bold;color:dodgerblue;">
-  signalPlayer( ), sprintToPlayer( ), standByDefender( ), stayStill( )</span>.
+  signalPlayer( ), sprintToPlayer( ), standByDefender( ), stayStill( )</span>. -->
   
 </div>
-<div id="task2">
+<!-- <div id="task2">
   <div id="step1">
     <img id="signal" src="img/signal.png">
     <span id="signal-steps">
       <span style="font-weight:bold; color:dodgerblue;">Step 1 signaPlayerl( )</span> 
       : Signal your teammate that you are going to set a screen for them; signal quickly so that the opposing team doesn't have time to stop you.
     </span>
-  </div>
-  <div id="step2">
+  </div> -->
+  <!-- <div id="step2">
     <img id="sprint" src="img/sprint.png">
     <span id="sprint-steps">
       <span style="font-weight:bold; color:dodgerblue;">Step 2 sprintToPlayer( ):</span>
@@ -196,15 +198,15 @@
     <br>
     <span style="font-weight:bold; color:dodgerblue;">Step 3 standByDefender( ):</span> Stop and stand beside or behind defender to block them from guarding your teammate.
     
-  </div>
-  <div id="step3">
+  </div> -->
+  <!-- <div id="step3">
     <img id="stand" src="img/stand.png">
     <span id="stand-steps">
       <span style="font-weight:bold; color:dodgerblue;">Step 4 stayStill( ):</span>
       Set your feet and use your arms to protect your body (remember: your feet must stay planted, and you can't use your arms to block the defender).  
       Once you've made contact with the defender you can move again.
     </span>
-  </div>
+  </div> -->
   
 </div> 
 <!-- <div id="task3">
@@ -249,6 +251,11 @@
     <br>
     <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
 </div>
+<div id="explain-personal">A <span style="font-weight:bold; color:dodgerblue">Personal Foul</span>
+        is when a player uses their hands, arms, legs, knees, or body to get in the way of another player.
+        Personal fouls are often unintentional— the player did not mean to do this.</div> 
+
+</div>
  <div class="your-code"onclick="showYourCode()">
   <div id="your-code-title">Your Task</div>
   <img id="the-dropdown" src="img/drop-down-arrow.png" >
@@ -256,7 +263,7 @@
   <div id="write-code"onclick="closeTaskPanel()">
   <div id="close-box">X</div><br>
      <br>
-     There are <span style="font-weight:bold;color:dodgerblue;">2 Parts to this Challenge:</span>
+     <!-- There are <span style="font-weight:bold;color:dodgerblue;">2 Parts to this Challenge:</span> -->
     <br>
     <br>
     First, you will write an Algorithm for <span style="font-weight:bold; color:dodgerblue;">Setting a Screen</span>.

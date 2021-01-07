@@ -420,7 +420,15 @@ function hideTake4(){
   document.getElementById('stay4').style.fontSize="14pt";
 }
 
+function showPersonal(){
+    document.getElementById('explain-personal').style.display="block";
+    
+}
 
+function hidePersonal(){
+    document.getElementById('explain-personal').style.display="none";
+    // var backgroundPersonal= ih-item.square.colored.effect12.right_to_left;
+}
 
 
 
