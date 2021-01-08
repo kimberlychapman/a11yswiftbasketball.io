@@ -220,34 +220,26 @@
       Auomatically Ejected
     </div>
 </div>
-<div id="part1" onclick="hidePart2()" ondblclick="showPart2()">
+<div id="part1" onclick="showFactBox()" ondblclick="hideFactBox()">
   <img id="bball1" src="img/nba.jpg">
 </div>
 <div id="screen-algorithm">
-    <div id="take1" onclick="showTake1()" ondblclick="hideTake1()"><br>
-      <span style="color:dodgerblue; font-weight: bold;">func </span><span id="standard">setScreen ( ) &nbsp </span>
-      <span id="big-bracket">{</span>
+    <div id="take1" onclick="showTake1()" ondblclick="hideTake1()"><span style="color:dodgerblue; font-weight:bold;">Part 1</span><br><br>
+      Fouls = 0
       <br>
       <br>
-      <span id="signal-screen"><span id="signal1">condition</span>&nbsp( )</span>
+      When a player has &lt 6 fouls...
+      <br>
+      <br>
+      If they get a Personal Foul, you add 1 to the count.
+      <br>
+      <br>
+      But if it's their 6th, or it's a Flagrant 2 Foul, they get kicked out.
+      </span>
+      <br>
+      <br>
     </div>
-    <br>
-    <br>
-    <div id="take2" onclick="showTake2()" ondblclick="hideTake2()">
-      <span id="sprint-screen"><span id="sprint2">condition</span>&nbsp( )</span>
-    </div>
-    <br>
-    <br>
-    <div id="take3" onclick="showTake3()" ondblclick="hideTake3()">
-      <span id="stand-screen"><span id="stand3">condition</span>&nbsp( )</span>
-    </div>
-    <br>
-    <br>
-    <div id="take4" onclick="showTake4()" ondblclick="hideTake4()">
-      <span id="stay-screen"><span id="stay4">condition</span>&nbsp( )</span>
-    </div>
-    <br>
-    <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
+
 </div>
 <div id="explain-personal">A <span style="font-weight:bold; color:dodgerblue">Personal Foul</span>
         is when a player uses their hands, arms, legs, knees, or body to get in the way of another player.
@@ -261,34 +253,27 @@
  
  
  
-      <div class="your-code"onclick="showYourCode()">
+<div class="your-code"onclick="showYourCode()">
   <div id="your-code-title">Your Task</div>
   <img id="the-dropdown" src="img/drop-down-arrow.png" >
 </div>
   <div id="write-code"onclick="closeTaskPanel()">
   <div id="close-box">X</div><br>
-    Now that you have practiced writing a <span style="font-weight:bold;">Do While Loop</span> for Personal Fouls, it's time to write a 
-    Do While Loop that keeps track of<span style="font-weight:bold; color:dodgerblue;"> Personal Fouls</span> and <span style="font-weight:bold; color:dodgerblue;">Flagrant 2 Fouls</span>.
-    <!-- First, you will write an Algorithm for <span style="font-weight:bold; color:dodgerblue;">Setting a Screen</span>.
-    Your algorithm needs to include:
+   Your Goal is to write a <span style="font-weight:bold;">While Loop</span> that:
+   <br>
+   <br>
+   &#x25cf; Uses a counter to keep track of a player's<span style="font-weight:bold; color:dodgerblue;"> Personal Fouls</span>.
+   <br>
+   &#x25cf; <span style="font-weight:bold; color:dodgerblue;">Breaks</span> out of the loop— kicks the player out of the game, if certain conditions are met</span>.
+   <br>
+   <br>
+   <div id="fact-list">Before writing your code, let's review the facts!</div>
     <br>
-    <br>
-    1. When (the <span style="font-weight:bold;">condition</span>) you would use a Screen.
-    <br>
-    2. The steps (<span style="font-weight:bold;">functions</span>) of Setting a Screen.
-    <br>
-    <br>
-    <div id="finish1">
-      Then, you will write your code:
-      <br>
-      <br>
-      1. Write your while statement: when would you use this function—Offense or Defense?
-      <br>
-      2. Use "if" and "else if" statments, and your Logical Operators, to have the team 
-      carry out actions under different conditions: isOpen,<br> ! isOpen, isBlocked, 
-      isInPositionToScore</span> -->
-    </div>
-    
+   <div id="challenge1"><span style="font-weight:bold; color:dodgerblue;">Part 1:</span> Use the facts to write out the steps of your code, from beginning to end.</div>
+   <br>
+  
+
+</div>
     <!-- <br>
     You will use these variables when writing your code:
     <br>
@@ -303,20 +288,21 @@
     <br>
     <br>
     var <span style="color:dodgerblue; font-weight: bold;">strongDefender</span> = a very strong Defensive Player. -->
-</div>
+
 <!-- <div id="see-codes" onmouseover="showYourCode()">The user would enter their code in this panel— with the support of a bank of code blocks at the bottom and predictive text— but for Demo Purposes: click on the white lines to show each code block & double click the white lines to reset them.</div> -->
-<div id="codeblock0" onclick="showWhile()" ondblclick="hideWhile()"><span id="offense">Offense </span>= <span id="true">true</span></div>
+<div id="codeblock0" onclick="showWhile()" ondblclick="hideWhile()"><span id="offense">i &nbsp</span> = <span id="true"> &nbsp0</span></div>
 <div id="codeblock1" onclick="showTrue()" ondblclick="hideTrue()">
   While <span id="white">(</span>
-  <span id="hidden">true</span>
+  <span id="hidden">i &lt 6</span>
   <span id="white">)</span>
   <span id="big-bracket">&nbsp {</span>
+  <br>
 </div>
 <div id="codeblock2" onclick="showCode2()" ondblclick="hideCode2()">
-  if &nbsp <span id="white2">(condition)</span>
+  <span style="font-size:16pt;">if</span> &nbsp <span id="white2">(condition)</span>
   <span id="medium-bracket">&nbsp {</span>
   <br>
-  <span id="hidden2">setScreen( )</span>
+  <span id="hidden2">i ++1;</span>
   <br>
   <span id="medium-bracket">&nbsp }</span>
 </div>
@@ -326,13 +312,14 @@
     <span id="white3"> (condition)</span>
     <span id="medium-bracket">&nbsp {</span>
       <br>
-      <span id="hidden3">passTheBall( )</span>
+      <span id="hidden3">break;</span>
       <br>
       <span id="medium-bracket">&nbsp }</span>
       <br>
-      <!-- <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span> -->
+      <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
+    
 </div>
-<div id="codeblock4" onclick="showCode4()" ondblclick="hideCode4()">
+<!-- <div id="codeblock4" onclick="showCode4()" ondblclick="hideCode4()">
     <span id="else-if2">else if &nbsp</span>
     <span id="shot1">(condition)</span>
     <span id="medium-bracket"> {</span>
@@ -341,8 +328,8 @@
     <br>
     <span id="medium-bracket">&nbsp }</span><br>
 
-</div> 
-<div id="codeblock5" onclick="showCode5()" ondblclick="hideCode5()">
+</div>  -->
+<!-- <div id="codeblock5" onclick="showCode5()" ondblclick="hideCode5()">
   <span id="cover5">else if &nbsp</span>
   <span id="shoot">(condition)</span>
   <span id="medium-bracket"> {</span>
@@ -351,7 +338,7 @@
   <br>
   <span id="medium-bracket">&nbsp }</span><br>
   <span id="big-bracket">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp }</span>
-</div>
+</div> -->
 
 <div id="please-work" onclick="closeWork()" onmouseleave="closeWork()">
   <div id="close-box">X</div>
@@ -371,7 +358,19 @@ Coming Soon!  I need to eat dinner.
   <br>
   Coming Soon!  I need to eat dinner.
 </div>
-
+  
+<div id="facts"onclick="showFactAnswers()" ondblclick="hideFactAnswers()">
+  &#x25cf; How many fouls does a player have at the start of the game? 
+  <br> <span id="start-number">0</span>
+  <br>
+  <br>
+  &#x25cf; How does a player's foul count change everytime they get a Personal Foul? <br> <span id="plus1">+ 1</span>
+  <br>
+  <br>
+  <br>
+  &#x25cf; Under what conditions (on or the other) would a player get kicked out because of their fouls? <br> <span id="kicked-out">6 Personal Fouls or a Flagrant 2 Foul.</span> 
+  <br>
+</div>
 <!-- <div id="still-working" onclick="hideStill()">
   <a id="close-box" href="">X</a>
   <br>
@@ -417,8 +416,8 @@ Coming Soon!  I need to eat dinner.
 </div> -->
 
 
-  <a id="back" href= "index2.html"><img id="rewind" src="img/rewind.png"></a>
-  <a id="next" href= "index3.html"><img id="forward" src="img/fast-forward.png"></a>
+  <a id="back" href= "index3.html"><img id="rewind" src="img/rewind.png"></a>
+  <a id="next" href= ""><img id="forward" src="img/fast-forward.png"></a>
 
 
   <!-- <a id="next" href= "index4.html"><img id="forward" src="img/fast-forward.png"></a> -->

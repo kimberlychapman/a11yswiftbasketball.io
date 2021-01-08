@@ -42,7 +42,7 @@ function hideTrue(){
 }
 
 function showCode2(){
-  document.getElementById('white2').innerHTML="isBlocked";
+  document.getElementById('white2').innerHTML="getsPersonalFoul";
   document.getElementById('hidden2').style.color="#eee";
 }
 
@@ -53,7 +53,7 @@ function hideCode2(){
 
 function showCode3(){
 document.getElementById('else-if1').style.color="dodgerblue";
-document.getElementById('white3').innerHTML="&nbsp isOpen";
+document.getElementById('white3').innerHTML="&nbsp i==6 || <br>getsFlagrant2Foul";
 document.getElementById('hidden3').style.color="#eee";
 }
 
@@ -347,8 +347,8 @@ document.getElementById('codeblock0').style.display="block";
 document.getElementById('codeblock1').style.display="block";
 document.getElementById('codeblock2').style.display="block";
 document.getElementById('codeblock3').style.display="block";
-document.getElementById('codeblock4').style.display="block";
-document.getElementById('codeblock5').style.display="block";
+// document.getElementById('codeblock4').style.display="block";
+// document.getElementById('codeblock5').style.display="block";
 document.getElementById('screen-algorithm').style.display="block";
 }
 
@@ -360,8 +360,8 @@ document.getElementById('codeblock0').style.display="none";
 document.getElementById('codeblock1').style.display="none";
 document.getElementById('codeblock2').style.display="none";
 document.getElementById('codeblock3').style.display="none";
-document.getElementById('codeblock4').style.display="none";
-document.getElementById('codeblock5').style.display="none";
+// document.getElementById('codeblock4').style.display="none";
+// document.getElementById('codeblock5').style.display="none";
 document.getElementById('screen-algorithm').style.display="none";
 }
 
@@ -477,10 +477,25 @@ function showFBoard4(){
   document.getElementById('fboard5').style.color="dodgerblue";
 }
 
+function showFactBox(){
+  document.getElementById('facts').style.display="block";
+}
 
+function hideFactBox(){
+  document.getElementById('facts').style.display="none";
+}
 
+function showFactAnswers(){
+  document.getElementById('start-number').style.color="dodgerblue";
+  document.getElementById('plus1').style.color="dodgerblue";
+  document.getElementById('kicked-out').style.color="dodgerblue";
+}
 
-
+function hideFactAnswers(){
+  document.getElementById('start-number').style.color="transparent";
+  document.getElementById('plus1').style.color="transparent";
+  document.getElementById('kicked-out').style.color="transparent";
+}
 
 
 
@@ -733,24 +748,15 @@ function stopTrack(){
   //   document.getElementById('test2').style.borderTop="transparent";
 //   }
 
-//   function showWhile(){
-  //   document.getElementById('test3').innerHTML="else if areMinors( ) {";
-  //   document.getElementById('test3').style.color="#eee";
-  //   document.getElementById('test3').style.borderBottom="solid #eee 2px";
-  //   document.getElementById('test3').style.borderTop="solid #eee 2px";
-  //   document.getElementById('test3').style.fontWeight="bold";
-    // document.getElementById('test3').style.backgroundColor="black";   
-//   }
+  function showWhile(){
+  document.getElementById('offense').style.color="#eee";
+  document.getElementById('true').style.color="#eee";
+  }
 
-//   function hideWhile(){
-  //   document.getElementById('test3').innerHTML="Queue";
-    // document.getElementById('test3').style.backgroundColor="#333";
-  //   document.getElementById('test3').style.color="#eee";
-  //     document.getElementById('test3').style.color="transparent";
-  //   document.getElementById('test3').style.borderBottom="solid #222 1px";
-  //   document.getElementById('test3').style.fontWeight="normal";
-//       document.getElementById('test3').style.borderTop="transparent";
-//   }
+  function hideWhile(){
+    document.getElementById('offense').style.color="transparent";
+    document.getElementById('true').style.color="transparent";
+  }
 
 function playClean(){
     document.getElementById('test4').innerHTML="playClean( ) }&nbsp }";

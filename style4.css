@@ -1420,7 +1420,7 @@ body {
     width:450px;
     height:350px;
     font-family:'Montserrat', sans-serif;
-    font-size:11pt;
+    font-size:10pt;
     color:#eee;
     background-color: #2a2a2a;
     border: solid 2px #eee;
@@ -1458,6 +1458,70 @@ body {
   -webkit-transform:scale(1.3);
 transform:scale(1.3);
 }
+#fact-list,
+#challenge1{
+  text-decoration: underline 2px;
+  text-decoration-color: dodgerblue;
+  /* border:2px inset dodgerblue; */
+  font-size:11pt;
+  padding:5px;
+}
+#fact-list:hover,
+#challenge1:hover
+  {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+  }
+  @-webkit-keyframes flash {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flash {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+ 
+  }
+#facts{
+  display:none;
+  position:absolute;
+  top:15%;
+  left:53%;
+  font-size:10pt;
+  color: #eee;
+  font-family:'Montserrat', sans-serif;
+  border:dashed 3px #eee;
+  background-color: #2a2a2a;
+  height:320px;
+  width:350px;
+  padding:5px;
+}
+
+#start-number,
+#plus1
+{
+  color: transparent;
+  font-family:'Montserrat', sans-serif;
+  font-size:16pt;
+  font-weight:bold;
+
+}
+
+#kicked-out{
+  color: transparent;
+  font-family:'Montserrat', sans-serif;
+  font-size:13pt;
+  font-weight:bold;
+
+}
 #screen-algorithm{
   position:absolute;
   top:395px;
@@ -1465,7 +1529,7 @@ transform:scale(1.3);
   width:226.5px;
   height:495px;
   background-color:#2a2a2a;
-  font-size:14pt;
+  font-size:13pt;
   color: #eee;
   font-family:'Montserrat', sans-serif;
   /* border:solid 2px #eee;
@@ -1473,8 +1537,12 @@ transform:scale(1.3);
   border:dashed 1px #eee;
   border-left:2px solid #eee;
   border-bottom:2px solid #eee;
-  text-align: center;
+  /* text-align: center; */
   padding-top:10px;
+}
+#take1{
+padding:10px;
+margin-left:10px;
 }
 #signal-screen,
 #sprint-screen,
@@ -1525,7 +1593,7 @@ font-size:14pt;
   border-left:1px dashed #eee;
   font-family:'Montserrat', sans-serif;
   background-color: #2a2a2a;
-  font-size:14pt;
+  font-size:16pt;
   color:dodgerblue;
   font-weight: normal;
   padding:10px;
@@ -1534,16 +1602,16 @@ font-size:14pt;
 }
 #codeblock1{
     position:absolute;
-    top:435px;
+    top:442px;
     right:1px;
     width:225px;
-    height:50px;
+    height:70px;
     border-right:2px solid #eee;
     /* border-top:1px dashed #eee; */
     border-left:1px dashed #eee;
     font-family:'Montserrat', sans-serif;
     background-color: #2a2a2a;
-    font-size:12pt;
+    font-size:16pt;
     color:dodgerblue;
     font-weight: normal;
     padding:10px;
@@ -1556,10 +1624,10 @@ font-size:14pt;
 
 #codeblock2{
     position:absolute;
-    top:477px;
+    top:500px;
     right:1px;
     width:225px;
-    height:95px;
+    height:110px;
     border-right:2px solid #eee;
     border-left:1px dashed #eee;
     font-family:'Montserrat', sans-serif;
@@ -1573,10 +1641,10 @@ font-size:14pt;
 }
 #codeblock3{
     position:absolute;
-    top:572px;
+    top:610px;
     right:1px;
     width:225px;
-    height:100px;
+    height:278px;
     border-right:2px solid #eee;
     border-left:1px dashed #eee;
     font-family:'Montserrat', sans-serif;
@@ -1636,6 +1704,7 @@ font-size:14pt;
 #white3,
 #shot1{
   color:#eee;
+  font-size:14pt;
   /* text-decoration: underline;
   text-decoration-style: solid 1px;
   text-decoration-color: #eee; */
@@ -1645,15 +1714,20 @@ font-size:14pt;
     text-decoration: underline;
     text-decoration-style: solid 1px;
     text-decoration-color: #eee;
-    font-size:12pt;
+    font-size:14pt;
 }
 #true{
-  color:#eee;
+  /* color:#eee; */
+  color:transparent;
+  text-decoration: underline;
+  text-decoration-style: solid 1px;
+  text-decoration-color: #eee;
 }
 
 #hidden2,
 #hidden3{
     color:transparent;
+    font-size:14pt;
    
 }
 #big-bracket{
@@ -1674,6 +1748,8 @@ font-size:14pt;
     text-decoration: underline;
     text-decoration-style: solid 1px;
     text-decoration-color: #eee;
+    font-size:16pt;
+    
 }
 #cover5{
   color:transparent;
