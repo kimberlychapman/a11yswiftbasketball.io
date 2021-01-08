@@ -101,7 +101,9 @@ document.getElementById('keep-working').style.display="none";
 document.getElementById('work-again').style.display="none";
 document.getElementById('task').style.display="none";
 document.getElementById('task2').style.display="none";
-// document.getElementById('task3').style.display="none";
+document.getElementById('task3').style.display="none";
+document.getElementById('task4').style.display="none";
+
 
 document.getElementById('please-work').style.display="block";
 document.getElementById('blue1').style.backgroundColor="yellow";
@@ -141,7 +143,8 @@ document.getElementById('please-work').style.display="none";
 //   document.getElementById('still-working').style.display="none";
 document.getElementById('task').style.display="none";
 document.getElementById('task2').style.display="none";
-// document.getElementById('task3').style.display="none";
+document.getElementById('task3').style.display="none";
+document.getElementById('task4').style.display="none";
 
 document.getElementById('work-again').style.display="block";
 document.getElementById('blue2').style.backgroundColor="yellow";
@@ -203,6 +206,9 @@ function showKeep(){
   // document.getElementById('still-working').style.display="none";
   document.getElementById('please-work').style.display="none";
   document.getElementById('task').style.display="none";
+  document.getElementById('task2').style.display="none";
+  document.getElementById('task3').style.display="none";
+  document.getElementById('task4').style.display="none";
 
   document.getElementById('keep-working').style.display="block";
   document.getElementById('else-else').style.backgroundColor="yellow";
@@ -268,7 +274,8 @@ document.getElementById('please-work').style.display="none";
 document.getElementById('work-again').style.display="none";
 document.getElementById('task').style.display="none";
 document.getElementById('task2').style.display="none";
-// document.getElementById('task3').style.display="none";
+document.getElementById('task3').style.display="none";
+document.getElementById('task4').style.display="none";
 //   document.getElementById('still-working').style.display="block";
 
 document.getElementById('keep-working').style.display="block";
@@ -298,7 +305,7 @@ function showTask(){
 document.getElementById('task').style.display="block";
 document.getElementById('task2').style.display="block";
 document.getElementById('the-drop').src="img/up-arrow.png";
-// document.getElementById('task3').style.display="block";
+document.getElementById('task3').style.display="block";
 //   document.getElementById('still-working').style.display="none";
 // document.getElementById('keep-working').style.display="none";
 // document.getElementById('please-work').style.display="none";
@@ -309,14 +316,26 @@ function hideTask(){
 document.getElementById('task').style.display="none";
 document.getElementById('task2').style.display="none";
 document.getElementById('the-drop').src="img/drop-down-arrow.png";
-// document.getElementById('task3').style.display="none";
+document.getElementById('task3').style.display="none";
+document.getElementById('task4').style.display="none";
+document.getElementById('fboard2').style.color="transparent";
+document.getElementById('fboard3').style.color="transparent";
+document.getElementById('ejected').style.color="transparent";
+document.getElementById('fboard4').style.color="transparent";
+document.getElementById('fboard5').style.color="transparent";
 }
+
+
+
+
+
 
 function showYourCode(){
 
-document.getElementById('task').style.display="none";
-document.getElementById('task2').style.display="none";
+// document.getElementById('task').style.display="none";
+// document.getElementById('task2').style.display="none";
 // document.getElementById('task3').style.display="none";
+// document.getElementById('task4').style.display="none";
 document.getElementById('keep-working').style.display="none";
 document.getElementById('please-work').style.display="none";
 document.getElementById('work-again').style.display="none";
@@ -430,7 +449,33 @@ function hidePersonal(){
     // var backgroundPersonal= ih-item.square.colored.effect12.right_to_left;
 }
 
+function showFlagrant(){
+  document.getElementById('explain-flagrant').style.display="block";
+  
+}
 
+function hideFlagrant(){
+  document.getElementById('explain-flagrant').style.display="none";
+  // var backgroundPersonal= ih-item.square.colored.effect12.right_to_left;
+}
+
+function showCount(){
+  document.getElementById('task4').style.display="block";
+}
+
+function showFBoard2(){
+  document.getElementById('fboard2').style.color="#eee";
+}
+
+function showFBoard3(){
+  document.getElementById('fboard3').style.color="#eee";
+  document.getElementById('ejected').style.color="dodgerblue";
+}
+
+function showFBoard4(){
+  document.getElementById('fboard4').style.color="#eee";
+  document.getElementById('fboard5').style.color="dodgerblue";
+}
 
 
 

@@ -166,62 +166,60 @@
   <img id="the-drop" src="img/drop-down-arrow.png">
 </div>
 <div id ="task">
-  <div id="close-box" onclick="hideTask()">X</div><br>
- <span id="foul-intro"><span style="font-weight: bold;">Player fouls</span> are when a player makes contact with another player in a way that breaks the rules.  
-     <br>
-    This challenge focuses on two types of Player Fouls:
-</span>
   <br>
-  <br>
-<button id="personal-btn" onclick="showPersonal()" ondblclick="hidePersonal()">Personal Foul</button>
-  <!-- <span style="font-weight:bold; color:dodgerblue;">Setting a Screen</span> is when an offensive player stands 
-  in the way of a defender who is guarding their teammate.  By standing there, they block the 
-  defender from guarding their teammate— freeing up their teammate to pass or score.  There are 
-  <span style="font-weight:bold;color:dodgerblue;">4 steps </span>to Setting a Screen: &nbsp <span style="font-weight:bold;color:dodgerblue;">
-  signalPlayer( ), sprintToPlayer( ), standByDefender( ), stayStill( )</span>. -->
-  
+  <span id="foul-intro"><span style="font-weight: bold;">Player fouls</span> are when a player makes contact with another player in a way that breaks the rules.  
+    <br>
+    <br>
+      This challenge focuses on <span style="font-weight:bold;">2 Types</span> of Player Fouls:
+  </span>
+    <br>
+    <br>
+    <button id="personal-btn" onclick="showPersonal()" ondblclick="hidePersonal()">Personal</button>
+    <button id="flagrant-btn" onclick="showFlagrant()" ondblclick="hideFlagrant()">Flagrant 2</button>
+    <br>
+    <br>
 </div>
-<!-- <div id="task2">
-  <div id="step1">
-    <img id="signal" src="img/signal.png">
-    <span id="signal-steps">
-      <span style="font-weight:bold; color:dodgerblue;">Step 1 signaPlayerl( )</span> 
-      : Signal your teammate that you are going to set a screen for them; signal quickly so that the opposing team doesn't have time to stop you.
-    </span>
-  </div> -->
-  <!-- <div id="step2">
-    <img id="sprint" src="img/sprint.png">
-    <span id="sprint-steps">
-      <span style="font-weight:bold; color:dodgerblue;">Step 2 sprintToPlayer( ):</span>
-      Sprint to your teammate to set the screen.
+<div id="task2">
+  <div id="foul1" onclick="showCount()">
+    All players begin the game with a personal foul count of 0.
+  </div>
+  <br>
+  <div id="foul2" onclick="showFBoard2()">
+    Each time a player gets a personal foul called on them, 1 foul is added to their foul count.  After the player gets a consequence for the foul, they can keep playing.
+  </div>
+  <div id="foul3" onclick="showFBoard3()">
+    If a player gets to 6 personal fouls, they get "ejected"— kicked out of the game.
+  </div>
+</div>
+<div id=task3>
+<div id="close-box" onclick="hideTask()">X</div><br>
+    <div id="f1" onclick="showFBoard4()">
+      Flagrant 2 Fouls don't follow this same math.
+      In a Flagrant 2 Foul, the <span style="font-weight:bold;">foul count does not matter</span>. 
+    </div>
     <br>
-    <br>
-    <span style="font-weight:bold; color:dodgerblue;">Step 3 standByDefender( ):</span> Stop and stand beside or behind defender to block them from guarding your teammate.
-    
-  </div> -->
-  <!-- <div id="step3">
-    <img id="stand" src="img/stand.png">
-    <span id="stand-steps">
-      <span style="font-weight:bold; color:dodgerblue;">Step 4 stayStill( ):</span>
-      Set your feet and use your arms to protect your body (remember: your feet must stay planted, and you can't use your arms to block the defender).  
-      Once you've made contact with the defender you can move again.
-    </span>
-  </div> -->
-  
-</div> 
-<!-- <div id="task3">
-
-  In a Zone Defense, each player guards a specific area; they guard anyone who comes into their space: making sure that no one who enters their space scores.
-  <br><br>
-  A team will play a Zone <span style="color:dodgerblue; font-weight:bold; font-size:12pt;">if:</span>
-  <br>
-  <br>
-  &#x25cf; There are players on the other team that are <span style="color:black;font-weight:bold; background-color:yellow;">not strong shooters</span> (so if you can keep them from getting close to the basket, they will have a much harder time scoring).
-  <br>
-  <br>
-  &#x25cf; <span style="color:black;font-weight:bold; background-color:yellow;">OR </span>there is a player (or two) on your team that is <span style="color:black;font-weight:bold; background-color:yellow;">not a strong defender</span> (so a zone allows a strong defender in the area next to theirs to help them).
-</div> -->
-
+    <div id="f2">
+      If a player gets a Flagrant 2 Foul called on them, they are automatically ejected
+      from the game. A Flagrant Foul 2 is so serious that the player automatically gets kicked out of the game.
+    </div>
+</div>
+<div id="task4">
+    <div id="fboard1">Fouls=0</div>
+    <div id="fboard2">
+      ++1
+      <br>
+      Fouls=2
+    </div>
+    <div id="fboard3">
+      Fouls=6 &nbsp <span id="ejected">Ejected</span>
+    </div>
+    <div id="fboard4">
+      Flagrant 2 Foul = 
+    </div>
+    <div id="fboard5">
+      Auomatically Ejected
+    </div>
+</div>
 <div id="part1" onclick="hidePart2()" ondblclick="showPart2()">
   <img id="bball1" src="img/nba.jpg">
 </div>
@@ -256,17 +254,22 @@
         Personal fouls are often unintentional— the player did not mean to do this.</div> 
 
 </div>
- <div class="your-code"onclick="showYourCode()">
+<div id="explain-flagrant">A <span style="font-weight:bold; color:dodgerblue">Flagrant 2 Foul</span>
+      is when a a player uses their hands, arms, legs, knees, or body to get in the way of another player— in a
+      way that could cause <span style="font-weight:bold;">SERIOUS BODILY INJURY</span>.  Flagrant 2 Fouls are often
+      done on purpose—meaning the player <span style="font-weight:bold;">MEANT</span> to do it.</div>
+ 
+ 
+ 
+      <div class="your-code"onclick="showYourCode()">
   <div id="your-code-title">Your Task</div>
   <img id="the-dropdown" src="img/drop-down-arrow.png" >
 </div>
   <div id="write-code"onclick="closeTaskPanel()">
   <div id="close-box">X</div><br>
-     <br>
-     <!-- There are <span style="font-weight:bold;color:dodgerblue;">2 Parts to this Challenge:</span> -->
-    <br>
-    <br>
-    First, you will write an Algorithm for <span style="font-weight:bold; color:dodgerblue;">Setting a Screen</span>.
+    Now that you have practiced writing a <span style="font-weight:bold;">Do While Loop</span> for Personal Fouls, it's time to write a 
+    Do While Loop that keeps track of<span style="font-weight:bold; color:dodgerblue;"> Personal Fouls</span> and <span style="font-weight:bold; color:dodgerblue;">Flagrant 2 Fouls</span>.
+    <!-- First, you will write an Algorithm for <span style="font-weight:bold; color:dodgerblue;">Setting a Screen</span>.
     Your algorithm needs to include:
     <br>
     <br>
@@ -283,7 +286,7 @@
       <br>
       2. Use "if" and "else if" statments, and your Logical Operators, to have the team 
       carry out actions under different conditions: isOpen,<br> ! isOpen, isBlocked, 
-      isInPositionToScore</span>
+      isInPositionToScore</span> -->
     </div>
     
     <!-- <br>
