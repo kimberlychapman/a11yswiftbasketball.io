@@ -96,14 +96,19 @@ function hideCode5(){
   // document.getElementById('hidden-bracket4').style.color="transparent";
 }
 function showWork(){
-document.getElementById('keep-working').style.display="none";
+// document.getElementById('keep-working').style.display="none";
+
 //   document.getElementById('still-working').style.display="none";
-document.getElementById('work-again').style.display="none";
-document.getElementById('task').style.display="none";
-document.getElementById('task2').style.display="none";
+
+// document.getElementById('work-again').style.display="none";
+
+document.getElementById('tasks').style.display="none";
+// document.getElementById('task').style.display="none";
+// document.getElementById('task2').style.display="none";
 // document.getElementById('task3').style.display="none";
 
-document.getElementById('please-work').style.display="block";
+// document.getElementById('please-work').style.display="block";
+
 document.getElementById('blue1').style.backgroundColor="yellow";
 document.getElementById('blue1').style.color="black";
 document.getElementById('while-loop').style.backgroundColor="yellow";
@@ -130,20 +135,24 @@ document.getElementById('blue1').style.color="dodgerblue";
 
 
 
-function closeWork(){
-document.getElementById('please-work').style.display="none";
-}
+// function closeWork(){
+// document.getElementById('please-work').style.display="none";
+// }
 
 function showAgain(){
 
-document.getElementById('keep-working').style.display="none";
-document.getElementById('please-work').style.display="none";
+// document.getElementById('keep-working').style.display="none";
+// document.getElementById('please-work').style.display="none";
+
 //   document.getElementById('still-working').style.display="none";
 document.getElementById('task').style.display="none";
-document.getElementById('task2').style.display="none";
+document.getElementById('tasks').style.display="none";
+// document.getElementById('task2').style.display="none";
 // document.getElementById('task3').style.display="none";
 
-document.getElementById('work-again').style.display="block";
+// document.getElementById('work-again').style.display="block";
+
+
 document.getElementById('blue2').style.backgroundColor="yellow";
 document.getElementById('blue2').style.color="black";
 document.getElementById('bracket3').style.backgroundColor="yellow";
@@ -169,7 +178,9 @@ document.getElementById('bracket7').style.color="black";
 }
 
 function hideAgain(){
-document.getElementById('work-again').style.display="block";
+// document.getElementById('work-again').style.display="block";
+
+
 document.getElementById('blue2').style.backgroundColor="transparent";
 document.getElementById('blue2').style.color="dodgerblue";
 document.getElementById('bracket3').style.backgroundColor="transparent";
@@ -196,15 +207,19 @@ document.getElementById('bracket7').style.color="#eee";
 }
 
 function closeAgain(){
-  document.getElementById('work-again').style.display="none";
+  // document.getElementById('work-again').style.display="none";
 }
 function showKeep(){
-  document.getElementById('work-again').style.display="none";
+  // document.getElementById('work-again').style.display="none";
+
   // document.getElementById('still-working').style.display="none";
-  document.getElementById('please-work').style.display="none";
+
+  // document.getElementById('please-work').style.display="none";
+
   document.getElementById('task').style.display="none";
 
-  document.getElementById('keep-working').style.display="block";
+  // document.getElementById('keep-working').style.display="block";
+
   document.getElementById('else-else').style.backgroundColor="yellow";
   document.getElementById('else-else').style.color="black";
   document.getElementById('this-thing').style.backgroundColor="yellow";
@@ -230,7 +245,8 @@ function showKeep(){
 }
 
 function hideKeep(){
-  document.getElementById('keep-working').style.display="block";
+  // document.getElementById('keep-working').style.display="block";
+
   document.getElementById('else-else').style.backgroundColor="transparent";
   document.getElementById('else-else').style.color="dodgerblue";
   document.getElementById('this-thing').style.backgroundColor="transparent";
@@ -264,14 +280,16 @@ function closeKeep(){
 // }
 function showSpans(){
 
-document.getElementById('please-work').style.display="none";
-document.getElementById('work-again').style.display="none";
-document.getElementById('task').style.display="none";
-document.getElementById('task2').style.display="none";
+// document.getElementById('please-work').style.display="none";
+// document.getElementById('work-again').style.display="none";
+
+// document.getElementById('task').style.display="none";
+document.getElementById('tasks').style.display="none";
+// document.getElementById('task2').style.display="none";
 // document.getElementById('task3').style.display="none";
 //   document.getElementById('still-working').style.display="block";
 
-document.getElementById('keep-working').style.display="block";
+// document.getElementById('keep-working').style.display="block";
 
 
 // document.getElementById('or3').style.backgroundColor="yellow";
@@ -295,8 +313,9 @@ function hideSpans(){
 }
 
 function showTask(){
-document.getElementById('task').style.display="block";
-document.getElementById('task2').style.display="block";
+document.getElementById('tasks').style.display="flex";
+// document.getElementById('task').style.display="block";
+// document.getElementById('task2').style.display="block";
 document.getElementById('the-drop').src="img/up-arrow.png";
 // document.getElementById('task3').style.display="block";
 //   document.getElementById('still-working').style.display="none";
@@ -306,69 +325,73 @@ document.getElementById('the-drop').src="img/up-arrow.png";
 }
 
 function hideTask(){
-document.getElementById('task').style.display="none";
-document.getElementById('task2').style.display="none";
+  document.getElementById('tasks').style.display="none";
+  // document.getElementById('task').style.display="none";
+// document.getElementById('task').style.display="none";
+// document.getElementById('task2').style.display="none";
 document.getElementById('the-drop').src="img/drop-down-arrow.png";
 // document.getElementById('task3').style.display="none";
 }
 
 function showYourCode(){
-
-document.getElementById('task').style.display="none";
-document.getElementById('task2').style.display="none";
+  document.getElementById('tasks').style.display="none";
+// document.getElementById('task').style.display="none";
+// document.getElementById('task2').style.display="none";
 // document.getElementById('task3').style.display="none";
-document.getElementById('keep-working').style.display="none";
-document.getElementById('please-work').style.display="none";
-document.getElementById('work-again').style.display="none";
+
+// document.getElementById('keep-working').style.display="none";
+// document.getElementById('please-work').style.display="none";
+// document.getElementById('work-again').style.display="none";
+
   // document.getElementById('still-working').style.display="none";
 
-document.getElementById('the-dropdown').src="img/up-arrow.png"
-document.getElementById('write-code').style.display="block";
-document.getElementById('codeblock0').style.display="block";
-document.getElementById('codeblock1').style.display="block";
-document.getElementById('codeblock2').style.display="block";
-document.getElementById('codeblock3').style.display="block";
-document.getElementById('codeblock4').style.display="block";
-document.getElementById('codeblock5').style.display="block";
-document.getElementById('screen-algorithm').style.display="block";
+document.getElementById('the-dropdown').src="img/up-arrow.png";
+document.getElementById('activity').style.display="flex";
+// document.getElementById('write-code').style.display="flex";
+// document.getElementById('parts').style.display="flex";
+// document.getElementById('screen-algorithm').style.display="block";
 }
 
 function closeTaskPanel(){
-document.getElementById('the-dropdown').src="img/drop-down-arrow.png"
-document.getElementById('write-code').style.display="none";
-// document.getElementById('see-codes').style.display="none";
-document.getElementById('codeblock0').style.display="none";
-document.getElementById('codeblock1').style.display="none";
-document.getElementById('codeblock2').style.display="none";
-document.getElementById('codeblock3').style.display="none";
-document.getElementById('codeblock4').style.display="none";
-document.getElementById('codeblock5').style.display="none";
-document.getElementById('screen-algorithm').style.display="none";
+document.getElementById('the-dropdown').src="img/drop-down-arrow.png";
+document.getElementById('activity').style.display="none";
+// document.getElementById('write-code').style.display="none";
+// document.getElementById('parts').style.display="none";
+// // document.getElementById('see-codes').style.display="none";
+// document.getElementById('codeblock0').style.display="none";
+// document.getElementById('codeblock1').style.display="none";
+// document.getElementById('codeblock2').style.display="none";
+// document.getElementById('codeblock3').style.display="none";
+// document.getElementById('codeblock4').style.display="none";
+// document.getElementById('codeblock5').style.display="none";
+// document.getElementById('screen-algorithm').style.display="none";
 }
 
-function hidePart2(){
-  document.getElementById('finish1').style.display="none";
-  document.getElementById('codeblock0').style.display="none";
-  document.getElementById('codeblock1').style.display="none";
-  document.getElementById('codeblock2').style.display="none";
-  document.getElementById('codeblock3').style.display="none";
-  document.getElementById('codeblock4').style.display="none";
-  document.getElementById('codeblock5').style.display="none";
-}
-function showPart2(){
-  document.getElementById('finish1').style.display="block";
-  document.getElementById('codeblock0').style.display="block";
-  document.getElementById('codeblock1').style.display="block";
-  document.getElementById('codeblock2').style.display="block";
-  document.getElementById('codeblock3').style.display="block";
-  document.getElementById('codeblock4').style.display="block";
-  document.getElementById('codeblock5').style.display="block";
-}
+// function hidePart2(){
+//   document.getElementById('finish1').style.display="none";
+  // document.getElementById('codeblock0').style.display="none";
+  // document.getElementById('codeblock1').style.display="none";
+  // document.getElementById('codeblock2').style.display="none";
+  // document.getElementById('codeblock3').style.display="none";
+  // document.getElementById('codeblock4').style.display="none";
+  // document.getElementById('codeblock5').style.display="none";
+// }
+// function showPart2(){
+//   document.getElementById('finish1').style.display="block";
+//   document.getElementById('codeblock0').style.display="block";
+//   document.getElementById('codeblock1').style.display="block";
+//   document.getElementById('codeblock2').style.display="block";
+//   document.getElementById('codeblock3').style.display="block";
+//   document.getElementById('codeblock4').style.display="block";
+//   document.getElementById('codeblock5').style.display="block";
+// }
 
 function closeDetails(){
-document.getElementById('keep-working').style.display="none";
-document.getElementById('please-work').style.display="none";
-document.getElementById('work-again').style.display="none";
+// document.getElementById('keep-working').style.display="none";
+// document.getElementById('please-work').style.display="none";
+// document.getElementById('work-again').style.display="none";
+
+
 //   document.getElementById('still-working').style.display="none";
 }
 

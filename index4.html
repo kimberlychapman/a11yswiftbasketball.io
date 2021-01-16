@@ -151,35 +151,63 @@
       <h3>Personal Foul</h3>
     </div></a>
 </div>
-
+<!-- 
 <div class="ih-item square colored effect12 left_to_right"><a href="#">
     <div class="img"><img src="img/flagrant.png" alt="img"></div>
     <div class="info">
       <h3>Flagrant 2 Foul</h3>
-      <!-- <p>Description goes here</p> -->
     </div></a>
-</div>
+</div> -->
 
 <div id="execute">Executing their Code</div>
 <div id="pg" onclick="showTask()">
   <div id="play-pg">Player Fouls</div>
   <img id="the-drop" src="img/drop-down-arrow.png">
 </div>
-<div id ="task">
-  <br>
-  <span id="foul-intro"><span style="font-weight: bold;">Player fouls</span> are when a player makes contact with another player in a way that breaks the rules.  
+<div id=tasks>
+  <div id ="task">
     <br>
+    <span id="foul-intro"><span style="font-weight: bold;">Player fouls</span> are when a player makes contact with another player in a way that breaks the rules.  
+      <br>
+      <br>
+        This challenge focuses on <span style="font-weight:bold;">2 Types</span> of Player Fouls:
+    </span>
+      <br>
+      <br>
+      <button id="personal-btn" onclick="showPersonal()" ondblclick="hidePersonal()">Personal</button>
+      <button id="flagrant-btn" onclick="showFlagrant()" ondblclick="hideFlagrant()">Flagrant 2</button>
+      <br>
+      <br>
+  </div>
+  <div id="task2">
+    <div id="foul1" onclick="showCount()">
+      All players begin the game with a personal foul count of 0.
+    </div>
     <br>
-      This challenge focuses on <span style="font-weight:bold;">2 Types</span> of Player Fouls:
-  </span>
-    <br>
-    <br>
-    <button id="personal-btn" onclick="showPersonal()" ondblclick="hidePersonal()">Personal</button>
-    <button id="flagrant-btn" onclick="showFlagrant()" ondblclick="hideFlagrant()">Flagrant 2</button>
-    <br>
-    <br>
+    <div id="foul2" onclick="showFBoard2()">
+      Each time a player gets a personal foul called on them, 1 foul is added to their foul count.  After the player gets a consequence for the foul, they can keep playing.
+    </div>
+    <div id="foul3" onclick="showFBoard3()">
+      If a player gets to 6 personal fouls, they get "ejected"— kicked out of the game.
+    </div>
+  </div>
+  <div id=task3>
+    <div id="close-box" onclick="hideTask()">X</div><br>
+        <div id="f1" onclick="showFBoard4()">
+          Flagrant 2 Fouls don't follow this same math.
+          In a Flagrant 2 Foul, the <span style="font-weight:bold;">foul count does not matter</span>. 
+        </div>
+        <br>
+        <div id="f2">
+          If a player gets a Flagrant 2 Foul called on them, they are automatically ejected
+          from the game. A Flagrant Foul 2 is so serious that the player automatically gets kicked out of the game.
+        </div>
+    </div>
 </div>
-<div id="task2">
+
+
+
+<!-- <div id="task2">
   <div id="foul1" onclick="showCount()">
     All players begin the game with a personal foul count of 0.
   </div>
@@ -190,8 +218,10 @@
   <div id="foul3" onclick="showFBoard3()">
     If a player gets to 6 personal fouls, they get "ejected"— kicked out of the game.
   </div>
-</div>
-<div id=task3>
+</div> -->
+
+
+<!-- <div id=task3>
 <div id="close-box" onclick="hideTask()">X</div><br>
     <div id="f1" onclick="showFBoard4()">
       Flagrant 2 Fouls don't follow this same math.
@@ -202,8 +232,10 @@
       If a player gets a Flagrant 2 Foul called on them, they are automatically ejected
       from the game. A Flagrant Foul 2 is so serious that the player automatically gets kicked out of the game.
     </div>
-</div>
-<div id="task4">
+</div> -->
+
+
+<!-- <div id="task4">
     <div id="fboard1">Fouls=0</div>
     <div id="fboard2">
       ++1
@@ -219,7 +251,9 @@
     <div id="fboard5">
       Auomatically Ejected
     </div>
-</div>
+</div> -->
+
+
 <div id="part1" onclick="showFactBox()" ondblclick="hideFactBox()">
   <img id="bball1" src="img/nba.jpg">
 </div>
